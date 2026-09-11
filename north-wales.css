@@ -1,0 +1,4 @@
+/* LPG Work in Bangor & North Wales | JTS LPG Services: page-specific presentation. Shared components live in styles.css. */
+.page-north-wales .inner-hero h1 {
+  max-width: 900px;
+}

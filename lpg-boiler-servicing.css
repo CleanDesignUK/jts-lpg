@@ -1,0 +1,27 @@
+.service-aside {
+  position: sticky;
+  top: 118px;
+}
+.service-travel {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 18px;
+}
+.service-local {
+  padding: 26px 0;
+}
+.service-local p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.service-local .text-link {
+  font-size: 14px;
+}
+@media (max-width: 640px) {
+  .service-aside {
+    position: static;
+  }
+  .service-local {
+    padding-bottom: 0;
+  }
+}

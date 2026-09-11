@@ -1,0 +1,13 @@
+.policy {
+  max-width: 860px;
+}
+.policy a:not(.button) {
+  text-decoration: underline;
+}
+.policy code {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.policy h2 {
+  font-size: 2.5rem;
+}

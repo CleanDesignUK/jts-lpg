@@ -1,0 +1,56 @@
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 23px 22px;
+  border-bottom: 1px solid var(--line);
+}
+.price-row h3 {
+  font-size: 19px;
+  margin: 0 0 4px;
+}
+.price-row p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+.price-row > strong {
+  font:
+    700 38px/1 "Barlow Condensed",
+    sans-serif;
+  white-space: nowrap;
+}
+.price-row > strong small {
+  font:
+    400 14px Inter,
+    sans-serif;
+}
+.price-row .quote-price {
+  font-size: 26px;
+}
+.price-row:hover {
+  background: #00000004;
+}
+.featured-price {
+  border: 1px solid var(--orange);
+  background: #e974170d;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.value-label {
+  font:
+    700 11px Barlow,
+    sans-serif;
+  letter-spacing: 0.06em;
+  background: var(--orange);
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+.price-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 20px 22px 0;
+}

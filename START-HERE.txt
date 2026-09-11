@@ -1,0 +1,66 @@
+JTS LPG WEBSITE: SIMPLE HTML, CSS AND JAVASCRIPT
+
+1. Extract this entire ZIP first.
+2. Open the JTS-LPG-Website folder.
+3. Double-click index.html to view the homepage, or use VS Code Live Server.
+
+All HTML, CSS and JavaScript files are together in this folder.
+The only subfolder is images.
+There is no src folder, dist folder, build script, package installation or Git requirement.
+
+WHAT TO EDIT
+
+index.html                  Homepage content
+index.css                   Homepage styling
+about.html / about.css      About page content and styling
+Other matching HTML/CSS     Each individual page
+styles.css                  Global colours, typography and shared layouts
+components.js               ONE place for the navbar AND footer on every page
+forms.js                    Form validation and submission handling
+config.js                   Paste the Web3Forms access key here
+cookies.js                  Cookie preference behaviour
+cookies-banner.css          Cookie banner styling
+images/                     Logo, favicon and your replacement photos
+
+All your custom HTML, CSS and JavaScript is formatted with indentation and line breaks.
+The font files and sweetalert2.min.js are third-party assets; leave them as they are.
+
+GLOBAL NAVBAR / FOOTER
+
+Edit navbarHTML and footerHTML in components.js, then save and refresh the page.
+Changes appear everywhere immediately. There is no rebuild step.
+Keep the script tags in their existing order.
+JavaScript must be enabled for the shared navbar/footer and interactive features.
+Page content stays in each regular HTML file. Basic fallback navigation is included
+for visitors with JavaScript disabled.
+
+IMAGES
+
+The Pexels URL placeholders still need an internet connection. Replace an image URL
+with a relative path such as images/jts-lpg-boiler-service-anglesey.webp.
+Filename suggestions appear in comments beside the image tags.
+The logo and favicon already work from the local images folder.
+
+FORMS
+
+Paste Jack's public Web3Forms access key into web3formsAccessKey in config.js.
+Enable mandatory hCaptcha in the Web3Forms dashboard.
+Until the key is supplied, the forms show a clear phone/WhatsApp fallback and do not
+claim an enquiry has been sent. Online submission and hCaptcha should be tested
+through Live Server or the final HTTPS website, rather than a file:// URL.
+Never paste an email password or private API secret into these files.
+
+LOCAL PREVIEW AND SEARCH
+
+This package retains noindex metadata because it came from a private review copy.
+Before launching the public website:
+- Replace the preview domain in canonical URLs, social metadata, structured data
+  and sitemap.xml with Jack's confirmed public domain. VS Code Replace in Files
+  can update all occurrences together.
+- Change the robots meta tag in each public page to index, follow.
+- Keep the 404 page noindex.
+- In robots.txt, change Disallow: / to Allow: / and add the public sitemap URL.
+- Confirm Jack's prices, business details and privacy notice before launch.
+
+Live form delivery needs the Web3Forms key. Pexels image loading requires internet
+and remains dependent on the external image host.
