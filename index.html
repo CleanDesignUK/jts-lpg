@@ -28,7 +28,20 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="index.css">
-  <script src="main.js" defer></script>
+<script
+  src="sweetalert2.min.js"
+  defer
+></script>
+
+<script
+  src="main.js"
+  defer
+></script>
+
+<script
+  src="forms.js"
+  defer
+></script>
 
   <script type="application/ld+json">
   {
@@ -216,18 +229,65 @@
 
 
       <!-- HERO FORM -->
+<!-- ============================================================
+     HERO ENQUIRY FORM
+============================================================= -->
+
 <form
   class="hero-enquiry"
-  action="contact-lpg-engineer-anglesey.html"
-  method="get"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  data-enquiry
 >
 
-  <h2>GET YOUR LPG SORTED.</h2>
+
+  <input
+    type="hidden"
+    name="access_key"
+    value="6058b768-9186-4d8d-8fa5-ced446829fca"
+  >
+
+
+  <input
+    type="hidden"
+    name="subject"
+    value="New JTS LPG Hero Enquiry"
+  >
+
+
+  <input
+    type="hidden"
+    name="from_name"
+    value="JTS LPG Website"
+  >
+
+
+  <!-- SPAM HONEYPOT -->
+
+  <input
+    type="checkbox"
+    name="botcheck"
+    tabindex="-1"
+    autocomplete="off"
+    style="display:none"
+  >
+
+
+  <h2>
+    GET YOUR LPG
+    <br>
+    SORTED.
+  </h2>
+
 
   <div class="hero-form-grid">
 
+
     <div class="hero-field">
-      <label for="hero-name">Your name</label>
+
+      <label for="hero-name">
+        Your name
+      </label>
 
       <input
         id="hero-name"
@@ -236,11 +296,16 @@
         autocomplete="name"
         required
       >
+
     </div>
 
 
+
     <div class="hero-field">
-      <label for="hero-phone">Phone number</label>
+
+      <label for="hero-phone">
+        Phone number
+      </label>
 
       <input
         id="hero-phone"
@@ -250,11 +315,16 @@
         inputmode="tel"
         required
       >
+
     </div>
 
 
+
     <div class="hero-field">
-      <label for="hero-location">Town / postcode</label>
+
+      <label for="hero-location">
+        Town / postcode
+      </label>
 
       <input
         id="hero-location"
@@ -263,56 +333,67 @@
         autocomplete="postal-code"
         required
       >
+
     </div>
 
 
+
     <div class="hero-field">
-      <label for="hero-service">What do you need?</label>
+
+      <label for="hero-service">
+        What do you need?
+      </label>
 
       <select
         id="hero-service"
         name="service"
         required
       >
-        <option value="">Choose a service</option>
 
-        <option>
+        <option value="">
+          Choose a service
+        </option>
+
+        <option value="LPG Gas Safety Certificate">
           LPG Gas Safety Certificate - £85
         </option>
 
-        <option>
+        <option value="LPG Boiler or Appliance Service">
           LPG Boiler / Appliance Service - £85
         </option>
 
-        <option>
+        <option value="Gas Safety and Annual Service Package">
           Gas Safety + Annual Service - £130
         </option>
 
-        <option>
+        <option value="LPG Breakdown or Repair">
           LPG Breakdown / Repair - from £85
         </option>
 
-        <option>
+        <option value="LPG Boiler Replacement">
           Boiler Replacement / Installation
         </option>
 
-        <option>
+        <option value="Regulator Meter or Hose Work">
           Regulator, Meter or Hose Work
         </option>
 
-        <option>
+        <option value="New Caravan Connection">
           New Caravan Connection
         </option>
 
-        <option>
+        <option value="Caravan or Holiday Park LPG Work">
           Caravan / Holiday Park LPG Work
         </option>
 
-        <option>
+        <option value="Not sure">
           Not sure - I need advice
         </option>
+
       </select>
+
     </div>
+
 
   </div>
 
@@ -323,6 +404,7 @@
   >
     Get a Call Back
   </button>
+
 
 </form>
 
@@ -2870,11 +2952,12 @@ Jack arrived promptly at 10am as he had promised. Instantly made myself and my l
          RIGHT: ENQUIRY FORM
     ========================================================= -->
 
-    <form
-      class="final-enquiry-form"
-      action="https://api.web3forms.com/submit"
-      method="POST"
-    >
+<form
+  class="final-enquiry-form"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  data-enquiry
+>
 
       <!--
         Replace this with your real Web3Forms access key
@@ -2885,7 +2968,13 @@ Jack arrived promptly at 10am as he had promised. Instantly made myself and my l
         name="access_key"
         value="6058b768-9186-4d8d-8fa5-ced446829fca"
       >
-
+<input
+  type="checkbox"
+  name="botcheck"
+  tabindex="-1"
+  autocomplete="off"
+  style="display:none"
+>
 
       <input
         type="hidden"
