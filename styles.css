@@ -2628,3 +2628,189 @@ span:nth-child(3) {
   }
 
 }
+
+.footer-gas-safe {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 20px;
+  padding: 10px 14px;
+
+  width: fit-content;
+
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+
+  text-decoration: none;
+}
+
+.footer-gas-safe-logo {
+  width: 58px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.footer-gas-safe span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  font-size: 0.7rem;
+  line-height: 1.2;
+  color: #9f9f9f;
+}
+
+.footer-gas-safe strong {
+  display: block;
+
+  font-size: 0.82rem;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-gas-safe {
+    padding: 9px 12px;
+    gap: 10px;
+  }
+
+  .footer-gas-safe-logo {
+    width: 52px;
+  }
+
+  .footer-gas-safe span {
+    font-size: 0.66rem;
+  }
+
+  .footer-gas-safe strong {
+    font-size: 0.78rem;
+  }
+}
+
+/* ============================================================
+   FOOTER BOTTOM
+============================================================ */
+
+.footer-bottom {
+  min-height: 92px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto;
+
+  align-items: center;
+
+  gap: 32px;
+
+  padding:
+    20px
+    0;
+
+  color: #777773;
+
+  border-top:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.09
+    );
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   COPYRIGHT + DESIGN CREDIT
+============================================================ */
+
+.footer-copyright {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 3px;
+}
+
+
+/* ============================================================
+   CLEAN DESIGN UK CREDIT
+============================================================ */
+
+.footer-credit {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #666662;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+.footer-credit a {
+  color: #b9b9b5;
+
+  font-weight: 600;
+
+  transition:
+    color 0.2s ease;
+}
+
+
+.footer-credit a:hover {
+  color: var(--orange);
+}
+
+
+.footer-heart {
+  display: inline-block;
+
+  margin:
+    0
+    2px;
+}
+
+
+/* ============================================================
+   LEGAL LINKS
+============================================================ */
+
+.footer-legal {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+}
+
+
+.footer-legal a {
+  color: #999995;
+
+  transition:
+    color 0.2s ease;
+}
+
+
+.footer-legal a:hover {
+  color: var(--orange);
+}

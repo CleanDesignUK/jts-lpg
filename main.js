@@ -664,4 +664,73 @@ if (serviceTrack && serviceArrows.length) {
   });
 
 }
+
+/* =========================================================
+   SERVICES EXPLORER SWITCHER
+========================================================= */
+
+const serviceTabButtons = document.querySelectorAll("[data-service-tab]");
+const servicePanels = document.querySelectorAll("[data-service-panel]");
+
+if (serviceTabButtons.length && servicePanels.length) {
+  serviceTabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = button.dataset.serviceTab;
+
+      serviceTabButtons.forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-selected", String(active));
+      });
+
+      servicePanels.forEach((panel) => {
+        const show = panel.dataset.servicePanel === target;
+        panel.hidden = !show;
+        panel.classList.toggle("is-active", show);
+      });
+    });
+  });
+}
+/* ============================================================
+   MOBILE WORK GALLERY
+============================================================ */
+
+const workGallery = document.querySelector("#work-gallery-track");
+
+const workGalleryButtons =
+  document.querySelectorAll("[data-gallery-dir]");
+
+if (workGallery && workGalleryButtons.length) {
+
+  workGalleryButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+      const direction =
+        Number(button.dataset.galleryDir);
+
+      const firstItem =
+        workGallery.querySelector(".work-gallery-item");
+
+      if (!firstItem) return;
+
+      const styles =
+        window.getComputedStyle(workGallery);
+
+      const gap =
+        parseFloat(styles.columnGap || styles.gap) || 0;
+
+      const distance =
+        firstItem.getBoundingClientRect().width + gap;
+
+      workGallery.scrollBy({
+        left: distance * direction,
+        behavior: "smooth"
+      });
+
+    });
+
+  });
+
+}
 })();

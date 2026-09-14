@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/services.html</loc></url>
+
   <url>
-    <loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/gas-safety-certificates.html</loc>
+    <loc>https://jtslpg.co.uk/</loc>
   </url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/lpg-boiler-servicing.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/lpg-repairs.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/boiler-installation.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/regulators-and-supply.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/caravan-connections.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/caravan-parks.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/pricing.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/about.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/areas-covered.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/anglesey.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/north-wales.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/reviews.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/contact.html</loc></url>
-  <url><loc>https://jts-lpg-local.cleandesign-uk.chatgpt.site/faqs.html</loc></url>
+
+  <url>
+    <loc>https://jtslpg.co.uk/about-jts-lpg-services-anglesey.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jtslpg.co.uk/lpg-services-anglesey.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jtslpg.co.uk/privacy-policy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jtslpg.co.uk/cookies.html</loc>
+  </url>
+
 </urlset>

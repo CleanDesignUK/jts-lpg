@@ -1,26 +1,1723 @@
-.credential-panel {
-  padding: 36px;
-  border-radius: 12px;
-  background: #000;
-  color: #fff;
+/* ============================================================
+   JTS LPG SERVICES
+   ABOUT PAGE
+============================================================ */
+
+
+/* ============================================================
+   HERO
+============================================================ */
+
+.about-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    160px
+    0
+    72px;
+
+  background: #080808;
+
+  color: #ffffff;
+
+  text-align: center;
 }
-.credential-number {
-  font:
-    700 70px "Barlow Condensed",
-    sans-serif;
-  color: var(--orange);
+
+
+.about-hero::before {
+  content: "";
+
+  position: absolute;
+
+  top: -250px;
+  left: 50%;
+
+  width: 650px;
+  height: 650px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(233, 116, 23, 0.15),
+      rgba(233, 116, 23, 0.04) 42%,
+      transparent 70%
+    );
+
+  transform:
+    translateX(-50%);
+
+  pointer-events: none;
+}
+
+
+.about-hero-inner {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1050px;
+
+  margin-inline: auto;
+}
+
+
+.about-hero .eyebrow {
+  justify-content: center;
+}
+
+
+.about-hero h1 {
+  max-width: 930px;
+
+  margin-inline: auto;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      5rem,
+      8vw,
+      7.9rem
+    );
+
+  line-height: 0.84;
+
+  text-align: center;
+}
+
+
+.about-hero h1 span {
   display: block;
-  margin-bottom: 12px;
+
+  color: var(--orange);
 }
-.credential-panel p,
-.credential-panel li {
-  color: #ccc;
+
+
+.about-hero p {
+  max-width: 760px;
+
+  margin:
+    29px
+    auto
+    0;
+
+  color: #b7b7b3;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   COMPANY INTRO
+============================================================ */
+
+.company-intro {
+  background: #101010;
+}
+
+
+.company-intro-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(320px, 0.88fr)
+    minmax(0, 1.12fr);
+
+  gap: 90px;
+
+  align-items: start;
+}
+
+
+.company-intro-heading {
+  position: sticky;
+
+  top: 120px;
+}
+
+
+.company-intro-heading h2 {
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      3.5rem,
+      5vw,
+      5rem
+    );
+}
+
+
+.company-intro-copy {
+  max-width: 700px;
+}
+
+
+.company-intro-copy > p {
+  margin:
+    0
+    0
+    18px;
+
+  color: #a9a9a5;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+}
+
+
+.company-intro-copy
+.company-intro-lead {
+  color: #ffffff;
+
+  font-size: 21px;
+
+  font-weight: 500;
+
+  line-height: 1.65;
+}
+
+
+/* ============================================================
+   COMPANY FACTS
+============================================================ */
+
+.company-facts {
+  margin-top: 38px;
+
+  border-top:
+    1px solid
+    #303030;
+}
+
+
+.company-facts > div {
+  display: grid;
+
+  grid-template-columns:
+    125px
+    minmax(0, 1fr);
+
+  gap: 24px;
+
+  padding:
+    17px
+    0;
+
+  border-bottom:
+    1px solid
+    #303030;
+}
+
+
+.company-facts span {
+  color: var(--orange);
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+
+.company-facts strong {
+  color: #ffffff;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+
+/* ============================================================
+   EXPERTISE
+============================================================ */
+
+.company-expertise {
+  background: #080808;
+}
+
+
+.company-section-heading {
+  max-width: 840px;
+
+  margin-bottom: 50px;
+}
+
+
+.company-section-heading h2 {
+  color: #ffffff;
+}
+
+
+.company-section-heading > p {
+  max-width: 700px;
+
+  margin:
+    26px
+    0
+    0;
+
+  color: #9f9f9b;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   SERVICE ROWS
+============================================================ */
+
+.company-service-list {
+  border-top:
+    1px solid
+    #303030;
+}
+
+
+.company-service-row {
+  display: grid;
+
+  grid-template-columns:
+    55px
+    minmax(0, 1fr)
+    44px;
+
+  gap: 22px;
+
+  align-items: center;
+
+  padding:
+    27px
+    0;
+
+  border-bottom:
+    1px solid
+    #303030;
+
+  transition:
+    padding-left 0.2s ease;
+}
+
+
+.company-service-row:hover {
+  padding-left: 8px;
+}
+
+
+.company-service-number {
+  color: var(--orange);
+
+  font-family:
+    "Barlow Condensed",
+    Arial,
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 800;
+}
+
+
+.company-service-row h3 {
+  color: #ffffff;
+
+  font-size: 22px;
+}
+
+
+.company-service-row p {
+  max-width: 760px;
+
+  margin:
+    7px
+    0
+    0;
+
+  color: #91918d;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+.company-service-row > i {
+  color: var(--orange);
+
+  font-size: 1.25rem;
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   JACK SECTION
+============================================================ */
+
+.company-jack {
+  background: #101010;
+}
+
+
+.company-jack-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(350px, 0.85fr)
+    minmax(0, 1.15fr);
+
+  gap: 78px;
+
+  align-items: center;
+}
+
+
+/* ============================================================
+   JACK IMAGE
+============================================================ */
+
+.company-jack-image {
+  min-height: 650px;
+
+  overflow: hidden;
+
+  background: #181818;
+
+  border-radius: 28px;
+}
+
+
+.company-jack-image img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 650px;
+
+  object-fit: cover;
+
+  object-position:
+    center
+    top;
+}
+
+
+/* ============================================================
+   JACK COPY
+============================================================ */
+
+.company-jack-copy {
+  max-width: 690px;
+}
+
+
+.company-jack-copy h2 {
+  color: #ffffff;
+}
+
+
+.company-jack-copy > p {
+  margin:
+    18px
+    0
+    0;
+
+  color: #a7a7a3;
+
+  font-size: 17px;
+
+  line-height: 1.72;
+}
+
+
+.company-jack-copy
+.company-jack-lead {
+  margin-top: 26px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  line-height: 1.65;
+}
+
+
+/* ============================================================
+   REVIEW LINK
+============================================================ */
+
+.company-review-link {
+  width: fit-content;
+
+  min-height: 48px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 28px;
+
+  padding:
+    10px
+    18px;
+
+  background: #ffffff;
+
+  color: var(--orange);
+
+  border-radius: var(--pill);
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.company-review-link:hover {
+  background: #eeeeee;
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* ============================================================
+   CREDENTIALS
+============================================================ */
+
+.company-credentials {
+  background: #080808;
+}
+
+
+.company-credentials-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(360px, 0.75fr);
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+.company-credentials-copy {
+  max-width: 680px;
+}
+
+
+.company-credentials-copy h2 {
+  color: #ffffff;
+}
+
+
+.company-credentials-copy > p {
+  max-width: 620px;
+
+  margin:
+    20px
+    0
+    0;
+
+  color: #a2a29e;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   GAS SAFE BUTTON
+============================================================ */
+
+.company-gas-safe-button {
+  min-height: 52px;
+
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 28px;
+
+  padding:
+    11px
+    20px;
+
+  background: var(--orange);
+
+  color: #111111;
+
+  border:
+    1px solid
+    var(--orange);
+
+  border-radius: var(--pill);
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.company-gas-safe-button:hover {
+  background: var(--amber);
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* ============================================================
+   CREDENTIAL PANEL
+============================================================ */
+
+.credential-panel {
+  padding:
+    34px;
+
+  background: #141414;
+
+  color: #ffffff;
+
+  border:
+    1px solid
+    #292929;
+
+  border-radius: 26px;
+}
+
+
+.credential-panel-label {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: #858581;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.09em;
+}
+
+
+/* ============================================================
+   CREDENTIAL TAGS
+============================================================ */
+
+.credential-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 29px;
+}
+
+
+.credential-tags span {
+  min-height: 39px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding:
+    8px
+    14px;
+
+  background: #ffffff;
+
+  color: var(--orange);
+
+  border-radius: var(--pill);
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+
+/* ============================================================
+   CREDENTIAL DETAIL
+============================================================ */
+
+.credential-detail {
+  display: grid;
+
+  grid-template-columns:
+    30px
+    minmax(0, 1fr);
+
+  gap: 13px;
+
+  padding:
+    20px
+    0;
+
+  border-top:
+    1px solid
+    #303030;
+}
+
+
+.credential-detail > i {
+  color: var(--orange);
+
+  font-size: 1.3rem;
+}
+
+
+.credential-detail strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+.credential-detail p {
+  margin:
+    5px
+    0
+    0;
+
+  color: #8d8d89;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+
+/* ============================================================
+   COVERAGE
+============================================================ */
+
+.company-coverage {
+  background: var(--orange);
+
+  color: #111111;
+}
+
+
+.company-coverage-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.82fr)
+    minmax(420px, 1fr);
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+.company-coverage .eyebrow {
+  color:
+    rgba(
+      0,
+      0,
+      0,
+      0.65
+    );
+}
+
+
+.company-coverage .eyebrow::before {
+  background: #111111;
+}
+
+
+.company-coverage h2 {
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      4.2rem,
+      6vw,
+      6rem
+    );
+}
+
+
+.company-coverage h2 span {
+  display: block;
+
+  color: #111111;
+}
+
+
+.company-coverage-copy > p {
+  max-width: 620px;
+
+  margin:
+    26px
+    0
+    0;
+
+  color:
+    rgba(
+      0,
+      0,
+      0,
+      0.75
+    );
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+.company-coverage-copy .button {
+  margin-top: 26px;
+}
+
+
+/* ============================================================
+   COVERAGE VISUAL
+============================================================ */
+
+.company-coverage-visual {
+  position: relative;
+
+  min-height: 480px;
+
+  overflow: hidden;
+
+  padding:
+    34px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  border-radius: 28px;
+}
+
+
+.company-coverage-visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: 370px;
+  height: 370px;
+
+  top: 50%;
+  left: 50%;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+
+  border-radius: 50%;
+
+  transform:
+    translate(-50%, -50%);
+}
+
+
+.company-coverage-visual::after {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  top: 50%;
+  left: 50%;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+
+  border-radius: 50%;
+
+  transform:
+    translate(-50%, -50%);
+}
+
+
+/* ============================================================
+   MAP CENTRE
+============================================================ */
+
+.coverage-map-centre {
+  position: absolute;
+
+  z-index: 2;
+
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  transform:
+    translate(-50%, -50%);
+
+  text-align: center;
+}
+
+
+.coverage-map-centre i {
+  margin-bottom: 12px;
+
+  color: var(--orange);
+
+  font-size: 2.1rem;
+}
+
+
+.coverage-map-centre strong {
+  color: #ffffff;
+
+  font-family:
+    "Barlow Condensed",
+    Arial,
+    sans-serif;
+
+  font-size: 3.2rem;
+
+  font-weight: 800;
+
+  line-height: 0.9;
+}
+
+
+.coverage-map-centre span {
+  margin-top: 8px;
+
+  color: #777773;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.09em;
+}
+
+
+/* ============================================================
+   LOCATIONS
+============================================================ */
+
+.coverage-map-places span {
+  position: absolute;
+
+  z-index: 3;
+
+  padding:
+    7px
+    12px;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  border-radius: var(--pill);
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.coverage-map-places span:nth-child(1) {
+  left: 8%;
+  top: 14%;
+}
+
+
+.coverage-map-places span:nth-child(2) {
+  left: 28%;
+  top: 7%;
+}
+
+
+.coverage-map-places span:nth-child(3) {
+  right: 12%;
+  top: 17%;
+}
+
+
+.coverage-map-places span:nth-child(4) {
+  left: 7%;
+  top: 45%;
+}
+
+
+.coverage-map-places span:nth-child(5) {
+  right: 8%;
+  top: 41%;
+}
+
+
+.coverage-map-places span:nth-child(6) {
+  left: 11%;
+  bottom: 16%;
+}
+
+
+.coverage-map-places span:nth-child(7) {
+  left: 39%;
+  bottom: 8%;
+}
+
+
+.coverage-map-places span:nth-child(8) {
+  right: 9%;
+  bottom: 18%;
+}
+
+
+.coverage-map-places span:nth-child(9) {
+  right: 7%;
+  bottom: 5%;
+
+  background: var(--orange);
+
+  color: #111111;
+}
+
+
+/* ============================================================
+   NORTH WALES LABEL
+============================================================ */
+
+.coverage-map-extension {
+  position: absolute;
+
+  z-index: 3;
+
+  left: 28px;
+  bottom: 27px;
+}
+
+
+.coverage-map-extension span {
+  display: block;
+
+  color: #73736f;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+
+.coverage-map-extension strong {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #ffffff;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
   font-size: 14px;
 }
-.credential-panel ul {
-  columns: 2;
-  padding-left: 20px;
+
+
+/* ============================================================
+   FINAL CTA
+============================================================ */
+
+.company-final-cta {
+  padding:
+    78px
+    0;
+
+  background: var(--orange);
+
+  color: #111111;
 }
-.page-about .inner-hero h1 {
-  max-width: 800px;
+
+
+.company-final-cta-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+.company-final-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color:
+    rgba(
+      0,
+      0,
+      0,
+      0.65
+    );
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.09em;
+}
+
+
+.company-final-cta h2 {
+  max-width: 760px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      3.8rem,
+      5.4vw,
+      5.6rem
+    );
+}
+
+
+.company-final-cta p {
+  max-width: 680px;
+
+  margin:
+    19px
+    0
+    0;
+
+  color:
+    rgba(
+      0,
+      0,
+      0,
+      0.73
+    );
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   FINAL BUTTONS
+============================================================ */
+
+.company-final-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 11px;
+
+  justify-content: flex-end;
+}
+
+
+.company-final-primary,
+.company-final-secondary {
+  min-height: 54px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding:
+    12px
+    24px;
+
+  border-radius: var(--pill);
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.company-final-primary {
+  background: #111111;
+
+  color: #ffffff;
+
+  border:
+    1px solid
+    #111111;
+}
+
+
+.company-final-secondary {
+  background: #ffffff;
+
+  color: var(--orange);
+
+  border:
+    1px solid
+    #ffffff;
+}
+
+
+.company-final-primary:hover,
+.company-final-secondary:hover {
+  transform:
+    translateY(-2px);
+}
+
+
+.company-final-primary:hover {
+  background: #292929;
+}
+
+
+.company-final-secondary:hover {
+  background: #eeeeee;
+}
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 1000px) {
+
+  .company-intro-layout,
+  .company-credentials-layout {
+    gap: 50px;
+  }
+
+
+  .company-jack-layout {
+    grid-template-columns:
+      minmax(310px, 0.75fr)
+      minmax(0, 1.25fr);
+
+    gap: 46px;
+  }
+
+
+  .company-jack-image,
+  .company-jack-image img {
+    min-height: 560px;
+  }
+
+
+  .company-coverage-layout {
+    grid-template-columns:
+      0.75fr
+      1fr;
+
+    gap: 45px;
+  }
+
+
+  .company-final-cta-layout {
+    gap: 40px;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 800px) {
+
+  /* HERO */
+
+  .about-hero {
+    padding:
+      118px
+      0
+      52px;
+  }
+
+
+  .about-hero h1 {
+    max-width: 9ch;
+
+    font-size:
+      clamp(
+        3.2rem,
+        14vw,
+        4.4rem
+      );
+
+    line-height: 0.88;
+  }
+
+
+  .about-hero p {
+    max-width: 34rem;
+
+    margin-top: 22px;
+
+    font-size: 16px;
+  }
+
+
+  /* COMPANY */
+
+  .company-intro-layout {
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+  }
+
+
+  .company-intro-heading {
+    position: static;
+
+    max-width: 650px;
+  }
+
+
+  /* EXPERTISE */
+
+  .company-service-row {
+    grid-template-columns:
+      38px
+      minmax(0, 1fr)
+      30px;
+
+    gap: 14px;
+  }
+
+
+  /* JACK */
+
+  .company-jack-layout {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+
+  .company-jack-image {
+    width: 100%;
+
+    max-width: 560px;
+
+    min-height: 570px;
+
+    margin-inline: auto;
+  }
+
+
+  .company-jack-image img {
+    min-height: 570px;
+  }
+
+
+  .company-jack-copy {
+    max-width: 650px;
+  }
+
+
+  /* CREDENTIALS */
+
+  .company-credentials-layout {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+
+  .credential-panel {
+    max-width: 620px;
+  }
+
+
+  /* COVERAGE */
+
+  .company-coverage-layout {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+
+  .company-coverage-visual {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin-inline: auto;
+  }
+
+
+  /* FINAL CTA */
+
+  .company-final-cta-layout {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .company-final-actions {
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+============================================================ */
+
+@media (max-width: 600px) {
+
+  /*
+    Centre the overall About page presentation on mobile,
+    while leaving longer paragraph text readable.
+  */
+
+  .company-intro-heading,
+  .company-section-heading,
+  .company-jack-copy,
+  .company-credentials-copy,
+  .company-coverage-copy {
+    margin-inline: auto;
+
+    text-align: center;
+  }
+
+
+  .company-intro-heading .eyebrow,
+  .company-section-heading .eyebrow,
+  .company-jack-copy .eyebrow,
+  .company-credentials-copy .eyebrow,
+  .company-coverage-copy .eyebrow {
+    justify-content: center;
+  }
+
+
+  .company-intro-copy {
+    text-align: left;
+  }
+
+
+  .company-intro-copy
+  .company-intro-lead {
+    text-align: center;
+  }
+
+
+  .company-facts > div {
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+
+    text-align: center;
+  }
+
+
+  .company-service-row {
+    grid-template-columns:
+      32px
+      minmax(0, 1fr);
+
+    align-items: start;
+  }
+
+
+  .company-service-row > i {
+    display: none;
+  }
+
+
+  .company-service-row h3,
+  .company-service-row p {
+    text-align: left;
+  }
+
+
+  .company-jack-image,
+  .company-jack-image img {
+    min-height: 490px;
+  }
+
+
+  .company-jack-image {
+    border-radius: 22px;
+  }
+
+
+  .company-jack-copy > p {
+    text-align: left;
+  }
+
+
+  .company-jack-copy
+  .company-jack-lead {
+    text-align: center;
+  }
+
+
+  .company-review-link {
+    margin-inline: auto;
+  }
+
+
+  .company-credentials-copy > p {
+    text-align: left;
+  }
+
+
+  .company-gas-safe-button {
+    width: 100%;
+  }
+
+
+  .credential-panel {
+    padding:
+      26px
+      21px;
+
+    border-radius: 22px;
+  }
+
+
+  /* Coverage visual becomes clean rather than crowded */
+
+  .company-coverage-visual {
+    min-height: auto;
+
+    padding:
+      28px
+      20px;
+  }
+
+
+  .company-coverage-visual::before,
+  .company-coverage-visual::after {
+    display: none;
+  }
+
+
+  .coverage-map-centre {
+    position: static;
+
+    transform: none;
+
+    margin-bottom: 25px;
+  }
+
+
+  .coverage-map-places {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+  }
+
+
+  .coverage-map-places span {
+    position: static;
+  }
+
+
+  .coverage-map-extension {
+    position: static;
+
+    margin-top: 25px;
+
+    text-align: center;
+  }
+
+
+  .company-final-cta {
+    padding:
+      62px
+      0;
+
+    text-align: center;
+  }
+
+
+  .company-final-actions {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+
+  .company-final-primary,
+  .company-final-secondary {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .company-intro-copy {
+    max-width: 560px;
+
+    margin-inline: auto;
+
+    text-align: center;
+  }
+
+
+  .company-intro-copy > p {
+    max-width: 520px;
+
+    margin:
+      0
+      auto
+      18px;
+
+    text-align: center;
+  }
+
+
+  .company-intro-copy
+  .company-intro-lead {
+    max-width: 500px;
+
+    margin:
+      0
+      auto
+      20px;
+
+    text-align: center;
+  }
+
 }
