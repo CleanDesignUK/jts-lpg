@@ -1,39 +1,49 @@
 (() => {
   "use strict";
 
-  const forms = document.querySelectorAll("[data-enquiry]");
+  /* ============================================================
+     JTS LPG ENQUIRY FORMS
+     Works with:
+     - homepage hero form
+     - homepage bottom form
+     - contact page form
+  ============================================================ */
 
-  if (!forms.length) return;
+  const forms =
+    document.querySelectorAll("form[data-enquiry]");
+
+  if (!forms.length) {
+    return;
+  }
 
 
   /* ============================================================
-     SWEETALERT / FALLBACK
+     SWEETALERT
   ============================================================ */
 
-  const showAlert = async ({
+  const notify = async (
     title,
     text,
     icon = "info"
-  }) => {
+  ) => {
 
     if (window.Swal) {
 
       return Swal.fire({
-        title,
-        text,
-        icon,
+        title: title,
+        text: text,
+        icon: icon,
 
         confirmButtonText: "OK",
 
-        confirmButtonColor: "#f47a0b",
+        confirmButtonColor: "#f4770b",
 
         background: "#151515",
-
         color: "#ffffff",
 
         iconColor:
           icon === "success"
-            ? "#f47a0b"
+            ? "#f4770b"
             : undefined,
 
         customClass: {
@@ -45,47 +55,86 @@
     }
 
 
+    /* fallback if SweetAlert fails to load */
+
     window.alert(
-      `${title}\n\n${text}`
+      title + "\n\n" + text
     );
 
   };
 
 
   /* ============================================================
-     BASIC UK PHONE VALIDATION
+     PHONE VALIDATION
   ============================================================ */
 
-  const validPhone = (value) => {
+  const validUKPhone = (value) => {
 
-    const clean =
-      value
-        .replace(/[^\d+]/g, "")
-        .trim();
+    const raw =
+      value.trim();
+
+
+    if (!raw) {
+      return false;
+    }
+
+
+    const cleaned =
+      raw.replace(
+        /[\s().-]/g,
+        ""
+      );
 
 
     return (
-      /^0\d{10}$/.test(clean) ||
-      /^\+44\d{10}$/.test(clean)
+      /^0\d{10}$/.test(cleaned) ||
+      /^\+44\d{10}$/.test(cleaned) ||
+      /^44\d{10}$/.test(cleaned)
     );
 
   };
 
 
   /* ============================================================
-     FORMS
+     EMAIL VALIDATION
+     Only runs if the current form ACTUALLY HAS an email field.
+  ============================================================ */
+
+  const validEmail = (value) => {
+
+    if (!value) {
+      return true;
+    }
+
+
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      .test(value);
+
+  };
+
+
+  /* ============================================================
+     EACH FORM
   ============================================================ */
 
   forms.forEach((form) => {
 
-    let sending = false;
+    let sending =
+      false;
 
 
     form.addEventListener(
       "submit",
       async (event) => {
 
+        /*
+          CRITICAL:
+          stop the browser from going to Web3Forms.
+        */
+
         event.preventDefault();
+
+        event.stopPropagation();
 
 
         if (sending) {
@@ -93,9 +142,48 @@
         }
 
 
-        /* -----------------------------------------------
-           NATIVE VALIDATION
-        ------------------------------------------------ */
+        /* ======================================================
+           FIELDS
+
+           These are OPTIONAL because different JTS forms contain
+           different fields.
+        ====================================================== */
+
+        const name =
+          form.elements.namedItem("name");
+
+        const phone =
+          form.elements.namedItem("phone");
+
+        const email =
+          form.elements.namedItem("email");
+
+        const location =
+          form.elements.namedItem("location");
+
+        const service =
+          form.elements.namedItem("service");
+
+        const botcheck =
+          form.elements.namedItem("botcheck");
+
+
+        /* ======================================================
+           HONEYPOT
+        ====================================================== */
+
+        if (
+          botcheck &&
+          botcheck.checked
+        ) {
+
+          return;
+        }
+
+
+        /* ======================================================
+           NORMAL HTML VALIDATION
+        ====================================================== */
 
         if (!form.checkValidity()) {
 
@@ -106,43 +194,20 @@
         }
 
 
-        /* -----------------------------------------------
-           HONEYPOT
-        ------------------------------------------------ */
-
-        const botcheck =
-          form.elements.botcheck;
-
-
-        if (
-          botcheck &&
-          botcheck.checked
-        ) {
-
-          return;
-
-        }
-
-
-        /* -----------------------------------------------
-           PHONE VALIDATION
-        ------------------------------------------------ */
-
-        const phone =
-          form.elements.phone;
-
+        /* ======================================================
+           PHONE
+        ====================================================== */
 
         if (
           phone &&
-          !validPhone(phone.value)
+          !validUKPhone(phone.value)
         ) {
 
-          await showAlert({
-            title: "Check your phone number",
-            text:
-              "Please enter a valid UK phone number, for example 07498 579460.",
-            icon: "warning"
-          });
+          await notify(
+            "Check your phone number",
+            "Please enter a valid UK phone number, for example 07498 579460.",
+            "warning"
+          );
 
 
           phone.focus();
@@ -152,25 +217,58 @@
         }
 
 
-        /* -----------------------------------------------
-           SUBMIT BUTTON
-        ------------------------------------------------ */
+        /* ======================================================
+           EMAIL
+           Contact page has it.
+           Homepage forms don't.
+        ====================================================== */
 
-        const button =
-          form.querySelector(
-            '[type="submit"]'
+        if (
+          email &&
+          email.value.trim() &&
+          !validEmail(
+            email.value.trim()
+          )
+        ) {
+
+          await notify(
+            "Check your email address",
+            "Please enter a valid email address.",
+            "warning"
           );
 
 
-        const originalText =
+          email.focus();
+
+          return;
+
+        }
+
+
+        /* ======================================================
+           BUTTON STATE
+        ====================================================== */
+
+        const button =
+          form.querySelector(
+            'button[type="submit"]'
+          );
+
+
+        const originalButtonHTML =
           button
             ? button.innerHTML
             : "";
 
 
+        sending =
+          true;
+
+
         if (button) {
 
-          button.disabled = true;
+          button.disabled =
+            true;
 
           button.textContent =
             "Sending…";
@@ -178,20 +276,61 @@
         }
 
 
-        sending = true;
-
-
-        /* -----------------------------------------------
-           BUILD DATA
-        ------------------------------------------------ */
+        /* ======================================================
+           FORM DATA
+        ====================================================== */
 
         const data =
           new FormData(form);
 
 
         /*
-          Helps Jack know which page/form
-          produced the enquiry.
+          Keep values clean.
+        */
+
+        if (name) {
+
+          data.set(
+            "name",
+            name.value.trim()
+          );
+
+        }
+
+
+        if (phone) {
+
+          data.set(
+            "phone",
+            phone.value.trim()
+          );
+
+        }
+
+
+        if (email) {
+
+          data.set(
+            "email",
+            email.value.trim()
+          );
+
+        }
+
+
+        if (location) {
+
+          data.set(
+            "location",
+            location.value.trim()
+          );
+
+        }
+
+
+        /*
+          Add the page URL so Jack can see where the
+          enquiry came from.
         */
 
         data.set(
@@ -200,11 +339,47 @@
         );
 
 
-        /* -----------------------------------------------
-           WEB3FORMS
-        ------------------------------------------------ */
+        /*
+          Build a useful subject automatically if required.
+        */
+
+        if (service?.value) {
+
+          const existingSubject =
+            data.get("subject");
+
+
+          if (!existingSubject) {
+
+            data.set(
+              "subject",
+              "New LPG enquiry: " +
+              service.value
+            );
+
+          }
+
+        }
+
+
+        /* ======================================================
+           WEB3FORMS AJAX SUBMISSION
+        ====================================================== */
 
         try {
+
+          const controller =
+            new AbortController();
+
+
+          const timeout =
+            setTimeout(
+              () => {
+                controller.abort();
+              },
+              20000
+            );
+
 
           const response =
             await fetch(
@@ -217,9 +392,15 @@
                 headers: {
                   Accept:
                     "application/json"
-                }
+                },
+
+                signal:
+                  controller.signal
               }
             );
+
+
+          clearTimeout(timeout);
 
 
           const result =
@@ -233,53 +414,60 @@
 
             throw new Error(
               result.message ||
-              "Submission failed"
+              "Web3Forms rejected the enquiry."
             );
 
           }
 
 
-          /* ---------------------------------------------
+          /* ====================================================
              SUCCESS
-          ---------------------------------------------- */
+          ==================================================== */
 
           form.reset();
 
 
-          await showAlert({
-            title: "Thank you!",
-            text:
-              "Your enquiry has been sent to Jack. He will get back to you shortly.",
-            icon: "success"
-          });
+          await notify(
+            "Thank you!",
+            "Your enquiry has been sent to Jack. He will get back to you shortly.",
+            "success"
+          );
 
 
         } catch (error) {
 
           console.error(
-            "JTS enquiry error:",
+            "JTS form submission error:",
             error
           );
 
 
-          await showAlert({
-            title: "Unable to send your enquiry",
-            text:
-              "Please try again, or contact Jack on 07498 579460 or WhatsApp.",
-            icon: "error"
-          });
+          const message =
+            error.name === "AbortError"
+              ? "The request took too long. Please try again or contact Jack directly on 07498 579460."
+              : "Your enquiry could not be sent. Please try again, call Jack on 07498 579460 or message him on WhatsApp.";
+
+
+          await notify(
+            "Unable to send your enquiry",
+            message,
+            "error"
+          );
+
 
         } finally {
 
-          sending = false;
+          sending =
+            false;
 
 
           if (button) {
 
-            button.disabled = false;
+            button.disabled =
+              false;
 
             button.innerHTML =
-              originalText;
+              originalButtonHTML;
 
           }
 
