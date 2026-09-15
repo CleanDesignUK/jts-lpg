@@ -18,25 +18,19 @@
   min-height: 680px;
 
   display: flex;
-
   align-items: center;
 
   overflow: hidden;
 
-  padding:
-    145px
-    0
-    72px;
+  padding: 145px 0 72px;
 
   background: #080808;
-
   color: #ffffff;
 }
 
 
 .svc-hero-bg {
   position: absolute;
-
   inset: 0;
 
   background:
@@ -51,33 +45,20 @@
       rgba(0, 0, 0, 0.55),
       transparent 58%
     ),
-    url(
-      "images/jts-lpg-anglesey-caravan-holiday-homes-2.jpg"
-    )
-    center
-    center
-    /
-    cover
-    no-repeat;
+    url("images/jts-lpg-anglesey-caravan-holiday-homes-2.jpg")
+    center center / cover no-repeat;
 
-  transform:
-    scale(1.015);
+  transform: scale(1.015);
 }
 
 
 .svc-hero-layout {
   position: relative;
-
   z-index: 2;
 
-  width:
-    min(
-      calc(100% - 80px),
-      1240px
-    );
+  width: min(calc(100% - 80px), 1240px);
 
   display: grid;
-
   grid-template-columns:
     minmax(0, 1fr)
     minmax(300px, 350px);
@@ -102,10 +83,7 @@
 .svc-hero-copy h1 {
   max-width: 700px;
 
-  margin:
-    16px
-    0
-    0;
+  margin: 16px 0 0;
 
   color: #ffffff;
 
@@ -122,9 +100,7 @@
     );
 
   font-weight: 800;
-
   line-height: 0.86;
-
   letter-spacing: -0.02em;
 
   text-transform: uppercase;
@@ -141,15 +117,11 @@
 .svc-hero-copy > p {
   max-width: 680px;
 
-  margin:
-    27px
-    0
-    0;
+  margin: 27px 0 0;
 
   color: #d0d0cc;
 
   font-size: 17px;
-
   line-height: 1.7;
 }
 
@@ -160,7 +132,6 @@
 
 .svc-hero-actions {
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 11px;
@@ -173,25 +144,16 @@
   min-height: 52px;
 
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
 
-  padding:
-    11px
-    22px;
+  padding: 11px 22px;
 
   color: #ffffff;
 
   border:
     1px solid
-    rgba(
-      255,
-      255,
-      255,
-      0.46
-    );
+    rgba(255, 255, 255, 0.46);
 
   border-radius: var(--pill);
 
@@ -201,7 +163,6 @@
     sans-serif;
 
   font-size: 15px;
-
   font-weight: 800;
 
   transition:
@@ -230,47 +191,30 @@
   padding: 27px;
 
   background:
-    rgba(
-      11,
-      11,
-      11,
-      0.9
-    );
+    rgba(11, 11, 11, 0.9);
 
   color: #ffffff;
 
   border:
     1px solid
-    rgba(
-      255,
-      255,
-      255,
-      0.14
-    );
+    rgba(255, 255, 255, 0.14);
 
   border-radius: 25px;
 
-  backdrop-filter:
-    blur(18px);
-
-  -webkit-backdrop-filter:
-    blur(18px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 
 .svc-package-kicker {
-  display: inline-flex;
-
   min-height: 31px;
 
+  display: inline-flex;
   align-items: center;
 
-  padding:
-    0
-    12px;
+  padding: 0 12px;
 
   background: var(--orange);
-
   color: #111111;
 
   border-radius: var(--pill);
@@ -281,7 +225,6 @@
     sans-serif;
 
   font-size: 10px;
-
   font-weight: 800;
 
   letter-spacing: 0.06em;
@@ -299,48 +242,34 @@
     sans-serif;
 
   font-size: 2.4rem;
-
   font-weight: 800;
-
   line-height: 0.94;
 }
 
 
 .svc-hero-package > p {
-  margin:
-    14px
-    0
-    0;
+  margin: 14px 0 0;
 
   color: #adada9;
 
   font-size: 14px;
-
   line-height: 1.6;
 }
 
 
 .svc-hero-package-price {
   display: flex;
-
   align-items: flex-end;
-
   justify-content: space-between;
 
   gap: 15px;
 
   margin-top: 22px;
-
   padding-top: 19px;
 
   border-top:
     1px solid
-    rgba(
-      255,
-      255,
-      255,
-      0.12
-    );
+    rgba(255, 255, 255, 0.12);
 }
 
 
@@ -350,7 +279,6 @@
   color: #777773;
 
   font-size: 9px;
-
   font-weight: 800;
 
   letter-spacing: 0.08em;
@@ -370,9 +298,7 @@
     sans-serif;
 
   font-size: 4.1rem;
-
   font-weight: 800;
-
   line-height: 0.9;
 }
 
@@ -383,7 +309,6 @@
   color: #858581;
 
   font-size: 11px;
-
   line-height: 1.4;
 
   text-align: right;
@@ -392,7 +317,6 @@
 
 .svc-hero-package > a {
   display: inline-flex;
-
   align-items: center;
 
   gap: 8px;
@@ -407,7 +331,6 @@
     sans-serif;
 
   font-size: 13px;
-
   font-weight: 700;
 
   transition:
@@ -421,520 +344,13 @@
 
 
 /* ============================================================
-   SERVICES
-============================================================ */
-
-.svc-services {
-  background: #0b0b0b;
-}
-
-
-.svc-section-head {
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 1.15fr)
-    minmax(300px, 0.6fr);
-
-  gap: 70px;
-
-  align-items: end;
-
-  margin-bottom: 48px;
-}
-
-
-.svc-section-head h2 {
-  max-width: 760px;
-
-  color: #ffffff;
-}
-
-
-.svc-section-head > p {
-  max-width: 500px;
-
-  margin: 0;
-
-  color: #9e9e9a;
-
-  font-size: 16px;
-
-  line-height: 1.7;
-}
-
-
-/* ============================================================
-   EXPLORER
-============================================================ */
-
-.svc-explorer-grid {
-  display: grid;
-
-  grid-template-columns:
-    minmax(280px, 365px)
-    minmax(0, 1fr);
-
-  gap: 24px;
-
-  align-items: start;
-}
-
-
-/* ============================================================
-   SERVICE MENU
-============================================================ */
-
-.svc-menu {
-  display: flex;
-
-  flex-direction: column;
-
-  overflow: hidden;
-
-  background: #121212;
-
-  border:
-    1px solid
-    #282828;
-
-  border-radius: 25px;
-}
-
-
-.svc-menu-btn {
-  width: 100%;
-
-  min-height: 89px;
-
-  display: grid;
-
-  grid-template-columns:
-    42px
-    minmax(0, 1fr)
-    18px;
-
-  gap: 13px;
-
-  align-items: center;
-
-  padding:
-    16px
-    18px;
-
-  background: transparent;
-
-  color: #ffffff;
-
-  border: 0;
-
-  border-bottom:
-    1px solid
-    #282828;
-
-  text-align: left;
-
-  cursor: pointer;
-
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
-}
-
-
-.svc-menu-btn:last-child {
-  border-bottom: 0;
-}
-
-
-.svc-menu-btn:hover {
-  background: #181818;
-}
-
-
-.svc-menu-btn.is-active {
-  background: var(--orange);
-
-  color: #111111;
-}
-
-
-.svc-menu-icon {
-  width: 42px;
-  height: 42px;
-
-  display: grid;
-
-  place-items: center;
-
-  background:
-    rgba(
-      255,
-      255,
-      255,
-      0.08
-    );
-
-  color: var(--orange);
-
-  border-radius: 13px;
-
-  font-size: 1.1rem;
-}
-
-
-.svc-menu-btn.is-active
-.svc-menu-icon {
-  background:
-    rgba(
-      0,
-      0,
-      0,
-      0.12
-    );
-
-  color: #111111;
-}
-
-
-.svc-menu-copy strong {
-  display: block;
-
-  color: inherit;
-
-  font-family:
-    Barlow,
-    Arial,
-    sans-serif;
-
-  font-size: 15px;
-
-  font-weight: 800;
-
-  line-height: 1.25;
-}
-
-
-.svc-menu-copy small {
-  display: block;
-
-  margin-top: 3px;
-
-  color: #858581;
-
-  font-size: 11px;
-
-  line-height: 1.35;
-}
-
-
-.svc-menu-btn.is-active
-.svc-menu-copy small {
-  color:
-    rgba(
-      0,
-      0,
-      0,
-      0.68
-    );
-}
-
-
-/* ============================================================
-   SERVICE PANELS
-============================================================ */
-
-.svc-panel[hidden] {
-  display: none !important;
-}
-
-
-.svc-panel {
-  min-height: 600px;
-
-  display: grid;
-
-  grid-template-columns:
-    minmax(260px, 0.83fr)
-    minmax(0, 1.17fr);
-
-  overflow: hidden;
-
-  background: #131313;
-
-  border:
-    1px solid
-    #292929;
-
-  border-radius: 28px;
-}
-
-
-/* ============================================================
-   PANEL IMAGE
-============================================================ */
-
-.svc-panel-image {
-  position: relative;
-
-  min-height: 600px;
-
-  overflow: hidden;
-
-  background: #1a1a1a;
-}
-
-
-.svc-panel-image::after {
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  background:
-    linear-gradient(
-      180deg,
-      transparent 50%,
-      rgba(0, 0, 0, 0.74)
-    );
-
-  pointer-events: none;
-}
-
-
-.svc-panel-image img {
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-
-  inset: 0;
-
-  object-fit: cover;
-}
-
-
-.svc-panel-image > span {
-  position: absolute;
-
-  z-index: 2;
-
-  left: 24px;
-  bottom: 24px;
-
-  display: inline-flex;
-
-  padding:
-    8px
-    13px;
-
-  background: var(--orange);
-
-  color: #111111;
-
-  border-radius: var(--pill);
-
-  font-family:
-    Barlow,
-    Arial,
-    sans-serif;
-
-  font-size: 10px;
-
-  font-weight: 800;
-
-  letter-spacing: 0.07em;
-}
-
-
-/* ============================================================
-   PANEL CONTENT
-============================================================ */
-
-.svc-panel-content {
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-
-  padding: 42px;
-}
-
-
-.svc-service-label {
-  color: var(--orange);
-
-  font-family:
-    Barlow,
-    Arial,
-    sans-serif;
-
-  font-size: 10px;
-
-  font-weight: 800;
-
-  letter-spacing: 0.09em;
-}
-
-
-.svc-panel-content h3 {
-  max-width: 600px;
-
-  margin:
-    13px
-    0
-    0;
-
-  color: #ffffff;
-
-  font-family:
-    "Barlow Condensed",
-    Arial,
-    sans-serif;
-
-  font-size:
-    clamp(
-      2.8rem,
-      4vw,
-      4.2rem
-    );
-
-  font-weight: 800;
-
-  line-height: 0.95;
-}
-
-
-.svc-panel-content > p {
-  max-width: 630px;
-
-  margin:
-    20px
-    0
-    0;
-
-  color: #aaa9a5;
-
-  font-size: 16px;
-
-  line-height: 1.7;
-}
-
-
-/* ============================================================
-   CHECKLIST
-============================================================ */
-
-.svc-check-list {
-  display: grid;
-
-  gap: 11px;
-
-  margin:
-    26px
-    0
-    0;
-
-  padding: 0;
-
-  list-style: none;
-}
-
-
-.svc-check-list li {
-  display: grid;
-
-  grid-template-columns:
-    22px
-    1fr;
-
-  gap: 9px;
-
-  color: #eeeeeb;
-
-  font-size: 14px;
-
-  line-height: 1.45;
-}
-
-
-.svc-check-list i {
-  color: var(--orange);
-
-  font-size: 1.05rem;
-}
-
-
-/* ============================================================
-   PANEL BOTTOM
-============================================================ */
-
-.svc-panel-bottom {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  align-items: flex-end;
-
-  justify-content: space-between;
-
-  gap: 22px;
-
-  margin-top: 32px;
-}
-
-
-.svc-service-price span {
-  display: block;
-
-  margin-bottom: 3px;
-
-  color: #777773;
-
-  font-family:
-    Barlow,
-    Arial,
-    sans-serif;
-
-  font-size: 9px;
-
-  font-weight: 800;
-
-  letter-spacing: 0.08em;
-}
-
-
-.svc-service-price strong {
-  display: block;
-
-  color: var(--orange);
-
-  font-family:
-    "Barlow Condensed",
-    Arial,
-    sans-serif;
-
-  font-size: 3.4rem;
-
-  font-weight: 800;
-
-  line-height: 0.9;
-}
-
-
-/* ============================================================
    PACKAGE
 ============================================================ */
 
 .svc-package {
-  padding:
-    92px
-    0;
+  padding: 92px 0;
 
   background: var(--orange);
-
   color: #111111;
 
   scroll-margin-top: 110px;
@@ -968,12 +384,7 @@
   margin-bottom: 14px;
 
   color:
-    rgba(
-      0,
-      0,
-      0,
-      0.64
-    );
+    rgba(0, 0, 0, 0.64);
 
   font-family:
     Barlow,
@@ -981,7 +392,6 @@
     sans-serif;
 
   font-size: 10px;
-
   font-weight: 800;
 
   letter-spacing: 0.09em;
@@ -1004,7 +414,6 @@
     );
 
   font-weight: 800;
-
   line-height: 0.88;
 }
 
@@ -1023,15 +432,9 @@
     0;
 
   color:
-    rgba(
-      0,
-      0,
-      0,
-      0.72
-    );
+    rgba(0, 0, 0, 0.72);
 
   font-size: 17px;
-
   line-height: 1.65;
 }
 
@@ -1042,7 +445,6 @@
 
 .svc-package-services {
   display: grid;
-
   grid-template-columns:
     1fr
     50px
@@ -1058,13 +460,11 @@
   min-height: 315px;
 
   display: flex;
-
   flex-direction: column;
 
   padding: 31px;
 
   background: #ffffff;
-
   color: #111111;
 
   border-radius: 27px;
@@ -1073,12 +473,7 @@
     0
     20px
     45px
-    rgba(
-      0,
-      0,
-      0,
-      0.12
-    );
+    rgba(0, 0, 0, 0.12);
 }
 
 
@@ -1087,13 +482,11 @@
   height: 56px;
 
   display: grid;
-
   place-items: center;
 
   margin-bottom: 25px;
 
   background: var(--orange);
-
   color: #ffffff;
 
   border-radius: 16px;
@@ -1111,7 +504,6 @@
     sans-serif;
 
   font-size: 9px;
-
   font-weight: 800;
 
   letter-spacing: 0.09em;
@@ -1138,7 +530,6 @@
   color: #666662;
 
   font-size: 14px;
-
   line-height: 1.6;
 }
 
@@ -1154,9 +545,7 @@
     sans-serif;
 
   font-size: 3.9rem;
-
   font-weight: 800;
-
   line-height: 0.9;
 }
 
@@ -1166,11 +555,9 @@
   height: 50px;
 
   display: grid;
-
   place-items: center;
 
   background: #111111;
-
   color: #ffffff;
 
   border-radius: 50%;
@@ -1181,7 +568,6 @@
     sans-serif;
 
   font-size: 2rem;
-
   font-weight: 700;
 }
 
@@ -1192,7 +578,6 @@
 
 .svc-package-deal {
   display: grid;
-
   grid-template-columns:
     minmax(0, 1fr)
     auto
@@ -1204,12 +589,9 @@
 
   margin-top: 18px;
 
-  padding:
-    29px
-    31px;
+  padding: 29px 31px;
 
   background: #111111;
-
   color: #ffffff;
 
   border-radius: 25px;
@@ -1225,7 +607,6 @@
     sans-serif;
 
   font-size: 9px;
-
   font-weight: 800;
 
   letter-spacing: 0.08em;
@@ -1244,15 +625,11 @@
 .svc-package-deal p {
   max-width: 570px;
 
-  margin:
-    6px
-    0
-    0;
+  margin: 6px 0 0;
 
   color: #999995;
 
   font-size: 13px;
-
   line-height: 1.55;
 }
 
@@ -1286,9 +663,7 @@
     sans-serif;
 
   font-size: 4.5rem;
-
   font-weight: 800;
-
   line-height: 0.88;
 }
 
@@ -1301,7 +676,6 @@
   color: #ffffff;
 
   font-size: 10px;
-
   font-weight: 800;
 
   letter-spacing: 0.08em;
@@ -1312,17 +686,12 @@
   min-height: 54px;
 
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
 
-  padding:
-    11px
-    22px;
+  padding: 11px 22px;
 
   background: #ffffff;
-
   color: var(--orange);
 
   border-radius: var(--pill);
@@ -1333,7 +702,6 @@
     sans-serif;
 
   font-size: 15px;
-
   font-weight: 800;
 
   white-space: nowrap;
@@ -1341,7 +709,677 @@
 
 
 /* ============================================================
-   MORE LPG WORK
+   SERVICES
+============================================================ */
+
+.svc-services {
+  background: #0b0b0b;
+}
+
+
+.svc-section-head {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(300px, 0.6fr);
+
+  gap: 70px;
+
+  align-items: end;
+
+  margin-bottom: 48px;
+}
+
+
+.svc-section-head h2 {
+  max-width: 760px;
+
+  color: #ffffff;
+}
+
+
+.svc-section-head > p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #9e9e9a;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   SERVICE EXPLORER
+============================================================ */
+
+.svc-explorer-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(280px, 365px)
+    minmax(0, 1fr);
+
+  gap: 24px;
+
+  align-items: start;
+}
+
+
+/* ============================================================
+   DESKTOP SERVICE MENU
+============================================================ */
+
+.svc-menu {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #121212;
+
+  border: 1px solid #282828;
+  border-radius: 25px;
+}
+
+
+.svc-menu-btn {
+  width: 100%;
+  min-height: 89px;
+
+  display: grid;
+  grid-template-columns:
+    42px
+    minmax(0, 1fr)
+    18px;
+
+  gap: 13px;
+
+  align-items: center;
+
+  padding: 16px 18px;
+
+  background: transparent;
+  color: #ffffff;
+
+  border: 0;
+  border-bottom: 1px solid #282828;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.svc-menu-btn:last-child {
+  border-bottom: 0;
+}
+
+
+.svc-menu-btn:hover {
+  background: #181818;
+}
+
+
+.svc-menu-btn.is-active {
+  background: var(--orange);
+
+  color: #111111;
+}
+
+
+.svc-menu-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  color: var(--orange);
+
+  border-radius: 13px;
+
+  font-size: 1.1rem;
+}
+
+
+.svc-menu-btn.is-active
+.svc-menu-icon {
+  background:
+    rgba(0, 0, 0, 0.12);
+
+  color: #111111;
+}
+
+
+.svc-menu-copy strong {
+  display: block;
+
+  color: inherit;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+
+.svc-menu-copy small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #858581;
+
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+
+.svc-menu-btn.is-active
+.svc-menu-copy small {
+  color:
+    rgba(0, 0, 0, 0.68);
+}
+
+
+/* ============================================================
+   MOBILE SERVICE NAVIGATION
+   Hidden until <= 800px
+============================================================ */
+
+.svc-mobile-nav {
+  display: none;
+}
+
+
+/* ============================================================
+   SERVICE PANELS
+============================================================ */
+
+.svc-panels {
+  min-width: 0;
+}
+
+
+.svc-panel {
+  min-height: 600px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(260px, 0.83fr)
+    minmax(0, 1.17fr);
+
+  overflow: hidden;
+
+  background: #131313;
+
+  border: 1px solid #292929;
+  border-radius: 28px;
+}
+
+
+.svc-panel[hidden] {
+  display: none !important;
+}
+
+
+/* ============================================================
+   PANEL IMAGE
+============================================================ */
+
+.svc-panel-image {
+  position: relative;
+
+  min-height: 600px;
+
+  overflow: hidden;
+
+  background: #1a1a1a;
+}
+
+
+.svc-panel-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 50%,
+      rgba(0, 0, 0, 0.74)
+    );
+
+  pointer-events: none;
+}
+
+
+.svc-panel-image img {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  inset: 0;
+
+  object-fit: cover;
+}
+
+
+.svc-panel-image > span {
+  position: absolute;
+  z-index: 2;
+
+  left: 24px;
+  bottom: 24px;
+
+  display: inline-flex;
+
+  padding: 8px 13px;
+
+  background: var(--orange);
+  color: #111111;
+
+  border-radius: var(--pill);
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.07em;
+}
+
+
+/* ============================================================
+   PANEL CONTENT
+============================================================ */
+
+.svc-panel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 42px;
+}
+
+
+.svc-service-label {
+  color: var(--orange);
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.09em;
+}
+
+
+.svc-panel-content h3 {
+  max-width: 600px;
+
+  margin: 13px 0 0;
+
+  color: #ffffff;
+
+  font-family:
+    "Barlow Condensed",
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(
+      2.8rem,
+      4vw,
+      4.2rem
+    );
+
+  font-weight: 800;
+  line-height: 0.95;
+}
+
+
+.svc-panel-content > p {
+  max-width: 630px;
+
+  margin: 20px 0 0;
+
+  color: #aaa9a5;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   CHECKLIST
+============================================================ */
+
+.svc-check-list {
+  display: grid;
+
+  gap: 11px;
+
+  margin: 26px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.svc-check-list li {
+  display: grid;
+  grid-template-columns:
+    22px
+    1fr;
+
+  gap: 9px;
+
+  color: #eeeeeb;
+
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+
+.svc-check-list i {
+  color: var(--orange);
+
+  font-size: 1.05rem;
+}
+
+
+/* ============================================================
+   PANEL BOTTOM
+============================================================ */
+
+.svc-panel-bottom {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 22px;
+
+  margin-top: 32px;
+}
+
+
+.svc-service-price span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #777773;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+
+.svc-service-price strong {
+  display: block;
+
+  color: var(--orange);
+
+  font-family:
+    "Barlow Condensed",
+    Arial,
+    sans-serif;
+
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 0.9;
+}
+
+
+/* ============================================================
+   BOILER REPLACEMENT
+   CUSTOM BEFORE / AFTER PANEL
+============================================================ */
+
+.svc-panel-replacement {
+  display: block;
+
+  overflow: hidden;
+}
+
+
+.svc-replacement-gallery {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 3px;
+
+  padding: 3px;
+
+  background: #252525;
+}
+
+
+.svc-replacement-photo {
+  position: relative;
+
+  min-width: 0;
+  height: 520px;
+
+  overflow: hidden;
+
+  margin: 0;
+
+  background: #0d0d0d;
+}
+
+
+.svc-replacement-photo:first-child {
+  border-radius:
+    20px
+    0
+    0
+    0;
+}
+
+
+.svc-replacement-photo:last-child {
+  border-radius:
+    0
+    20px
+    0
+    0;
+}
+
+
+.svc-replacement-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+
+  background: #0d0d0d;
+
+  transition:
+    transform 0.35s ease;
+}
+
+
+.svc-replacement-photo:hover img {
+  transform: scale(1.015);
+}
+
+
+.svc-replacement-photo::after {
+  content: "";
+
+  position: absolute;
+  z-index: 1;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.02) 55%,
+      rgba(0, 0, 0, 0.82) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+.svc-replacement-badge {
+  position: absolute;
+  z-index: 3;
+
+  top: 18px;
+  left: 18px;
+
+  min-height: 35px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 15px;
+
+  background: #111111;
+  color: #ffffff;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.2);
+
+  border-radius: 999px;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+
+  letter-spacing: 0.09em;
+}
+
+
+.svc-replacement-photo-after
+.svc-replacement-badge {
+  background: var(--orange);
+  color: #111111;
+
+  border-color: var(--orange);
+}
+
+
+.svc-replacement-photo figcaption {
+  position: absolute;
+  z-index: 2;
+
+  left: 22px;
+  right: 22px;
+  bottom: 20px;
+
+  color: #ffffff;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+.svc-replacement-content {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  gap: 60px;
+
+  padding:
+    42px
+    44px
+    46px;
+}
+
+
+.svc-replacement-intro h3 {
+  max-width: 560px;
+
+  margin-top: 10px;
+
+  color: #ffffff;
+}
+
+
+.svc-replacement-intro > p {
+  max-width: 570px;
+
+  margin: 20px 0 0;
+
+  color: #bdbdb9;
+
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+
+.svc-replacement-details {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.svc-replacement-details
+.svc-check-list {
+  margin-top: 0;
+}
+
+
+.svc-replacement-details
+.svc-panel-bottom {
+  margin-top: auto;
+}
+
+
+/* ============================================================
+   ADDITIONAL LPG WORK
 ============================================================ */
 
 .svc-more {
@@ -1351,7 +1389,6 @@
 
 .svc-more-grid {
   display: grid;
-
   grid-template-columns:
     1fr
     1fr;
@@ -1362,7 +1399,6 @@
 
 .svc-more-item {
   display: grid;
-
   grid-template-columns:
     55px
     minmax(0, 1fr);
@@ -1375,10 +1411,7 @@
 
   background: #141414;
 
-  border:
-    1px solid
-    #292929;
-
+  border: 1px solid #292929;
   border-radius: 25px;
 }
 
@@ -1388,16 +1421,10 @@
   height: 55px;
 
   display: grid;
-
   place-items: center;
 
   background:
-    rgba(
-      233,
-      116,
-      23,
-      0.12
-    );
+    rgba(233, 116, 23, 0.12);
 
   color: var(--orange);
 
@@ -1421,7 +1448,6 @@
     sans-serif;
 
   font-size: 9px;
-
   font-weight: 800;
 
   letter-spacing: 0.08em;
@@ -1429,10 +1455,7 @@
 
 
 .svc-more-item h3 {
-  margin:
-    8px
-    0
-    0;
+  margin: 8px 0 0;
 
   color: #ffffff;
 
@@ -1443,38 +1466,28 @@
 .svc-more-item p {
   max-width: 520px;
 
-  margin:
-    12px
-    0
-    0;
+  margin: 12px 0 0;
 
   color: #92928e;
 
   font-size: 14px;
-
   line-height: 1.65;
 }
 
 
 .svc-more-button {
+  width: fit-content;
   min-height: 48px;
 
-  width: fit-content;
-
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
 
   margin-top: 23px;
 
-  padding:
-    10px
-    19px;
+  padding: 10px 19px;
 
   background: var(--orange);
-
   color: #111111;
 
   border-radius: var(--pill);
@@ -1485,7 +1498,6 @@
     sans-serif;
 
   font-size: 14px;
-
   font-weight: 800;
 
   transition:
@@ -1497,8 +1509,7 @@
 .svc-more-button:hover {
   background: var(--amber);
 
-  transform:
-    translateY(-2px);
+  transform: translateY(-2px);
 }
 
 
@@ -1513,7 +1524,6 @@
 
 .svc-location-layout {
   display: grid;
-
   grid-template-columns:
     minmax(0, 0.95fr)
     minmax(320px, 0.8fr);
@@ -1537,15 +1547,11 @@
 .svc-location-copy > p {
   max-width: 620px;
 
-  margin:
-    19px
-    0
-    0;
+  margin: 19px 0 0;
 
   color: #a7a7a3;
 
   font-size: 16px;
-
   line-height: 1.7;
 }
 
@@ -1557,7 +1563,6 @@
 
 .svc-location-areas {
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 10px;
@@ -1568,17 +1573,12 @@
   min-height: 45px;
 
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
 
-  padding:
-    0
-    17px;
+  padding: 0 17px;
 
   background: var(--orange);
-
   color: #111111;
 
   border-radius: var(--pill);
@@ -1589,7 +1589,6 @@
     sans-serif;
 
   font-size: 14px;
-
   font-weight: 800;
 }
 
@@ -1599,19 +1598,15 @@
 ============================================================ */
 
 .svc-final-cta {
-  padding:
-    88px
-    0;
+  padding: 88px 0;
 
   background: var(--orange);
-
   color: #111111;
 }
 
 
 .svc-final-layout {
   display: grid;
-
   grid-template-columns:
     minmax(0, 1fr)
     auto;
@@ -1633,12 +1628,7 @@
   margin-bottom: 13px;
 
   color:
-    rgba(
-      0,
-      0,
-      0,
-      0.63
-    );
+    rgba(0, 0, 0, 0.63);
 
   font-family:
     Barlow,
@@ -1646,7 +1636,6 @@
     sans-serif;
 
   font-size: 10px;
-
   font-weight: 800;
 
   letter-spacing: 0.09em;
@@ -1671,7 +1660,6 @@
     );
 
   font-weight: 800;
-
   line-height: 0.88;
 }
 
@@ -1679,21 +1667,12 @@
 .svc-final-copy p {
   max-width: 690px;
 
-  margin:
-    20px
-    0
-    0;
+  margin: 20px 0 0;
 
   color:
-    rgba(
-      0,
-      0,
-      0,
-      0.75
-    );
+    rgba(0, 0, 0, 0.75);
 
   font-size: 16px;
-
   line-height: 1.65;
 }
 
@@ -1702,7 +1681,6 @@
   min-width: 245px;
 
   display: flex;
-
   flex-direction: column;
 
   gap: 10px;
@@ -1714,16 +1692,12 @@
   min-height: 55px;
 
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
 
   gap: 9px;
 
-  padding:
-    11px
-    24px;
+  padding: 11px 24px;
 
   border-radius: var(--pill);
 
@@ -1733,7 +1707,6 @@
     sans-serif;
 
   font-size: 16px;
-
   font-weight: 800;
 
   white-space: nowrap;
@@ -1742,14 +1715,12 @@
 
 .svc-final-primary {
   background: #111111;
-
   color: #ffffff;
 }
 
 
 .svc-final-phone {
   background: #ffffff;
-
   color: var(--orange);
 }
 
@@ -1782,7 +1753,6 @@
 
   .svc-menu {
     display: grid;
-
     grid-template-columns:
       1fr
       1fr;
@@ -1798,21 +1768,31 @@
 
 
   .svc-menu-btn {
-    border:
-      1px solid
-      #282828;
-
+    border: 1px solid #282828;
     border-radius: 18px;
   }
 
 
-  .svc-panel {
+  .svc-panel,
+  .svc-panel-image {
     min-height: 560px;
   }
 
 
-  .svc-panel-image {
-    min-height: 560px;
+  .svc-replacement-photo {
+    height: 460px;
+  }
+
+
+  .svc-replacement-content {
+    grid-template-columns: 1fr;
+
+    gap: 26px;
+
+    padding:
+      34px
+      30px
+      38px;
   }
 
 
@@ -1828,8 +1808,7 @@
 
 
   .svc-package-book {
-    grid-column:
-      1 / -1;
+    grid-column: 1 / -1;
 
     width: fit-content;
   }
@@ -1957,8 +1936,9 @@
   }
 
 
-  /* MOBILE SERVICES:
-     no tabs, every service becomes a normal card */
+  /* ========================================================
+     MOBILE SERVICE EXPLORER
+  ======================================================== */
 
   .svc-explorer-grid {
     display: block;
@@ -1970,28 +1950,160 @@
   }
 
 
-  .svc-panels {
+  .svc-mobile-nav {
     display: grid;
+    grid-template-columns:
+      52px
+      minmax(0, 1fr)
+      52px;
 
-    gap: 18px;
+    gap: 12px;
+
+    align-items: center;
+
+    margin-bottom: 16px;
   }
 
 
-  .svc-panel,
-  .svc-panel[hidden] {
+  .svc-mobile-arrow {
+    width: 52px;
+    height: 52px;
+
+    display: grid;
+    place-items: center;
+
+    padding: 0;
+
+    background: #171717;
+    color: #ffffff;
+
+    border: 1px solid #303030;
+    border-radius: 50%;
+
+    font-size: 1.15rem;
+
+    cursor: pointer;
+
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+
+  .svc-mobile-arrow:hover {
+    background: var(--orange);
+    color: #111111;
+
+    border-color: var(--orange);
+  }
+
+
+  .svc-mobile-arrow:active {
+    transform: scale(0.94);
+  }
+
+
+  .svc-mobile-progress {
+    min-width: 0;
+
+    text-align: center;
+  }
+
+
+  .svc-mobile-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    color: var(--orange);
+
+    font-family:
+      Barlow,
+      Arial,
+      sans-serif;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+  }
+
+
+  .svc-mobile-progress strong {
+    display: block;
+
+    margin-top: 4px;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    font-family:
+      Barlow,
+      Arial,
+      sans-serif;
+
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+
+  .svc-panels {
+    touch-action: pan-y;
+  }
+
+
+  .svc-panel {
     min-height: 0;
 
-    display: block !important;
+    display: block;
 
     overflow: hidden;
 
     background: #141414;
 
-    border:
-      1px solid
-      #292929;
-
+    border: 1px solid #292929;
     border-radius: 23px;
+  }
+
+
+  .svc-panel[hidden] {
+    display: none !important;
+  }
+
+
+  .svc-panel.is-active {
+    animation:
+      svc-mobile-panel-in
+      0.28s
+      ease;
+  }
+
+
+  @keyframes svc-mobile-panel-in {
+
+    from {
+      opacity: 0.35;
+
+      transform:
+        translateX(14px);
+    }
+
+    to {
+      opacity: 1;
+
+      transform:
+        translateX(0);
+    }
+
   }
 
 
@@ -2065,7 +2177,6 @@
 
   .svc-panel-bottom {
     flex-direction: column;
-
     align-items: center;
 
     margin-top: 27px;
@@ -2076,17 +2187,100 @@
 
   .svc-panel-bottom .button {
     width: 100%;
-
     max-width: 420px;
+  }
+
+
+  /* BOILER REPLACEMENT */
+
+  .svc-replacement-gallery {
+    grid-template-columns: 1fr;
+
+    gap: 3px;
+  }
+
+
+  .svc-replacement-photo {
+    height: 430px;
+  }
+
+
+  .svc-replacement-photo:first-child,
+  .svc-replacement-photo:last-child {
+    border-radius: 0;
+  }
+
+
+  .svc-replacement-photo:first-child {
+    border-radius:
+      18px
+      18px
+      0
+      0;
+  }
+
+
+  .svc-replacement-photo img {
+    object-fit: contain;
+  }
+
+
+  .svc-replacement-content {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding:
+      28px
+      22px
+      30px;
+
+    text-align: center;
+  }
+
+
+  .svc-replacement-intro h3,
+  .svc-replacement-intro > p {
+    margin-inline: auto;
+  }
+
+
+  .svc-replacement-details
+  .svc-check-list {
+    margin:
+      23px
+      auto
+      0;
+
+    text-align: left;
+  }
+
+
+  .svc-replacement-details
+  .svc-panel-bottom {
+    margin-top: 27px;
+  }
+
+
+  .svc-replacement-photo figcaption {
+    left: 18px;
+    right: 18px;
+    bottom: 17px;
+
+    font-size: 14px;
+  }
+
+
+  .svc-replacement-badge {
+    top: 15px;
+    left: 15px;
   }
 
 
   /* PACKAGE */
 
   .svc-package {
-    padding:
-      70px
-      0;
+    padding: 70px 0;
   }
 
 
@@ -2140,7 +2334,7 @@
   }
 
 
-  /* MORE */
+  /* ADDITIONAL WORK */
 
   .svc-more-grid {
     grid-template-columns: 1fr;
@@ -2233,8 +2427,34 @@
   }
 
 
+  .svc-mobile-nav {
+    grid-template-columns:
+      46px
+      minmax(0, 1fr)
+      46px;
+
+    gap: 9px;
+  }
+
+
+  .svc-mobile-arrow {
+    width: 46px;
+    height: 46px;
+  }
+
+
+  .svc-mobile-progress strong {
+    font-size: 13px;
+  }
+
+
   .svc-panel-image {
     min-height: 235px;
+  }
+
+
+  .svc-replacement-photo {
+    height: 390px;
   }
 
 
@@ -2288,9 +2508,7 @@
   .svc-location-areas span {
     min-height: 42px;
 
-    padding:
-      0
-      14px;
+    padding: 0 14px;
 
     font-size: 13px;
   }
@@ -2313,3 +2531,17 @@
 
 }
 
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .svc-panel.is-active,
+  .svc-replacement-photo img {
+    animation: none;
+    transition: none;
+  }
+
+}
