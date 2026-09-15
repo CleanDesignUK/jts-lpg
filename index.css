@@ -3526,43 +3526,7 @@ p {
   }
 
 
-  .final-conversion-layout {
-    grid-template-columns:
-      minmax(0, 1fr)
-      minmax(350px, 0.8fr);
-
-    gap: 48px;
-  }
-
-
-  .final-proof-list {
-    gap: 16px;
-  }
-
-
-  .final-proof {
-    grid-template-columns:
-      28px
-      minmax(0, 1fr);
-
-    gap: 10px;
-  }
-
-
-  .final-proof > i {
-    width: 28px;
-    height: 28px;
-
-    font-size: 1.25rem;
-  }
-
-
-  .final-proof strong {
-    font-size: 15px;
-
-    white-space: normal;
-  }
-
+ 
 
   .final-conversion h2 {
     font-size:
@@ -5540,6 +5504,267 @@ p {
 
   .work-gallery-arrow-next {
     right: 9px;
+  }
+
+}
+
+/* ============================================================
+   FINAL CTA PROOF POINTS
+   CLEAN / NO CARDS / NO BORDERS
+============================================================ */
+
+.final-proof-list {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 38px;
+
+  margin-top: 40px;
+}
+
+
+.final-proof {
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    36px
+    minmax(0, 1fr);
+
+  gap: 13px;
+
+  align-items: start;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: 0;
+
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+
+.final-proof > i {
+  width: 36px;
+  height: 36px;
+
+  display: grid;
+
+  place-items: center;
+
+  padding: 0;
+
+  background: transparent;
+
+  color: #111111;
+
+  border: 0;
+
+  border-radius: 0;
+
+  font-size: 1.35rem;
+
+  line-height: 1;
+}
+
+
+.final-proof > div {
+  min-width: 0;
+
+  margin: 0;
+}
+
+
+.final-proof strong {
+  display: block;
+
+  color: #111111;
+
+  font-family:
+    Barlow,
+    Arial,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+
+  white-space: normal;
+}
+
+
+.final-proof span {
+  display: block;
+
+  margin-top: 5px;
+
+  color:
+    rgba(
+      0,
+      0,
+      0,
+      0.64
+    );
+
+  font-size: 13px;
+
+  line-height: 1.45;
+}
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 1100px) {
+
+  .final-proof-list {
+    gap: 28px;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 700px) {
+
+  .final-proof-list {
+    order: 4;
+
+    width: min(100%, 480px);
+
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+
+    margin:
+      10px
+      auto
+      4px;
+  }
+
+
+  .final-proof {
+    grid-template-columns:
+      34px
+      minmax(0, 1fr);
+
+    gap: 13px;
+
+    align-items: start;
+
+    text-align: left;
+  }
+
+
+  .final-proof > i {
+    width: 34px;
+    height: 34px;
+
+    font-size: 1.25rem;
+  }
+
+
+  .final-proof strong {
+    font-size: 15px;
+  }
+
+
+  .final-proof span {
+    font-size: 12px;
+  }
+
+}
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 700px) {
+
+  .final-proof-list {
+    order: 4;
+
+    width: min(100%, 480px);
+
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+
+    margin:
+      12px
+      auto
+      4px;
+  }
+
+
+  .final-proof {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    text-align: center;
+  }
+
+
+  .final-proof > i {
+    width: auto;
+    height: auto;
+
+    display: block;
+
+    font-size: 1.4rem;
+  }
+
+
+  .final-proof > div {
+    width: 100%;
+
+    margin: 0;
+
+    text-align: center;
+  }
+
+
+  .final-proof strong {
+    font-size: 15px;
+
+    line-height: 1.25;
+
+    text-align: center;
+  }
+
+
+  .final-proof span {
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    text-align: center;
   }
 
 }
