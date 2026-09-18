@@ -2187,3 +2187,34 @@
 
   text-align: left;
 }
+
+/* ============================================================
+   CONTACT HERO - MOBILE WIDTH FIX
+============================================================ */
+
+@media (max-width: 700px) {
+
+  .contact-hero-copy {
+    width: 100%;
+    max-width: none;
+  }
+
+  .contact-hero-copy h1 {
+    width: 100%;
+    max-width: none;
+
+    margin-inline: auto;
+
+    font-size:
+      clamp(
+        2.7rem,
+        11vw,
+        3.8rem
+      );
+
+    line-height: 0.92;
+
+    text-align: center;
+  }
+
+}
