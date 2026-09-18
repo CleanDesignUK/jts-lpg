@@ -162,145 +162,400 @@
        STRUCTURED DATA
   ========================================================== -->
 
-  <script type="application/ld+json">
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
 
-  {
-    "@context": "https://schema.org",
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://jtslpg.co.uk/#business",
 
-    "@graph": [
+      "name": "JTS LPG Services",
+      "alternateName": "JTS LPG Anglesey",
 
-      {
-        "@type": "LocalBusiness",
+      "url": "https://jtslpg.co.uk/",
 
-        "@id": "https://jtslpg.co.uk/#business",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://jtslpg.co.uk/#logo",
+        "url": "https://jtslpg.co.uk/images/jts-lpg-logo.jpg"
+      },
 
-        "name": "JTS LPG Services",
+      "telephone": "+447498579460",
+      "email": "jack@jtslpg.co.uk",
 
-        "alternateName": "JTS LPG Anglesey",
+      "description": "Gas Safe registered LPG caravan and leisure gas specialist based on Anglesey, providing LPG gas safety, servicing, fault finding, repairs, boiler work, caravan connections and related LPG services.",
 
-        "url": "https://jtslpg.co.uk/",
+      "slogan": "LPG Caravan & Leisure Gas Specialist",
 
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Gas Safe Register",
+        "value": "958399"
+      },
+
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Anglesey"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ynys Môn"
+        },
+        {
+          "@type": "Place",
+          "name": "Holyhead"
+        },
+        {
+          "@type": "Place",
+          "name": "Valley"
+        },
+        {
+          "@type": "Place",
+          "name": "Trearddur Bay"
+        },
+        {
+          "@type": "Place",
+          "name": "Rhosneigr"
+        },
+        {
+          "@type": "Place",
+          "name": "Llangefni"
+        },
+        {
+          "@type": "Place",
+          "name": "Amlwch"
+        },
+        {
+          "@type": "Place",
+          "name": "Benllech"
+        },
+        {
+          "@type": "Place",
+          "name": "Menai Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Beaumaris"
+        },
+        {
+          "@type": "Place",
+          "name": "Bangor"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "North Wales"
+        }
+      ],
+
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+
+      "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+447498579460",
-
         "email": "jack@jtslpg.co.uk",
-
-        "description": "Independent Gas Safe registered LPG specialist based on Anglesey, providing LPG gas services for static caravans, holiday homes, lodges and domestic LPG properties.",
-
-        "logo": "https://jtslpg.co.uk/images/jts-lpg-logo.jpg",
-
-        "areaServed": [
-
-          "Anglesey",
-          "Ynys Môn",
-          "Holyhead",
-          "Valley",
-          "Trearddur Bay",
-          "Rhosneigr",
-          "Llangefni",
-          "Amlwch",
-          "Benllech",
-          "Menai Bridge",
-          "Beaumaris",
-          "Bangor",
-          "North Wales"
-
-        ],
-
-        "openingHoursSpecification": [
-
-          {
-            "@type": "OpeningHoursSpecification",
-
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-
-            "opens": "08:00",
-
-            "closes": "18:00"
-          }
-
-        ],
-
-        "contactPoint": {
-
-          "@type": "ContactPoint",
-
-          "telephone": "+447498579460",
-
-          "contactType": "customer enquiries",
-
-          "email": "jack@jtslpg.co.uk",
-
-          "availableLanguage": "English"
-
-        },
-
-        "sameAs": [
-
-          "https://maps.app.goo.gl/bEaAyxAanjpNgeDS9",
-
-          "https://www.facebook.com/profile.php?id=61577346257321",
-
-          "https://www.instagram.com/jts_lpg/"
-
-        ]
-
+        "contactType": "customer enquiries",
+        "availableLanguage": "en-GB"
       },
 
-
-      {
-        "@type": "ContactPage",
-
-        "@id": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html#webpage",
-
-        "url": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html",
-
-        "name": "Contact LPG Gas Engineer Anglesey | JTS LPG Services",
-
-        "description": "Contact JTS LPG Services for LPG gas safety certificates, boiler servicing, repairs, installations and caravan gas work across Anglesey.",
-
-        "about": {
-          "@id": "https://jtslpg.co.uk/#business"
-        },
-
-        "inLanguage": "en-GB"
-
-      },
-
-
-      {
-        "@type": "BreadcrumbList",
-
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "JTS LPG Services",
         "itemListElement": [
 
           {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://jtslpg.co.uk/"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "LPG Gas Safety Certificate",
+              "provider": {
+                "@id": "https://jtslpg.co.uk/#business"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Anglesey"
+              }
+            }
           },
 
           {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Contact",
-            "item": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "LPG Boiler and Appliance Servicing",
+              "provider": {
+                "@id": "https://jtslpg.co.uk/#business"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Anglesey"
+              }
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gas Safety and Annual Service Package",
+              "provider": {
+                "@id": "https://jtslpg.co.uk/#business"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Anglesey"
+              }
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "LPG Breakdown and Repair",
+              "provider": {
+                "@id": "https://jtslpg.co.uk/#business"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Anglesey"
+              }
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "LPG Boiler Replacement",
+              "provider": {
+                "@id": "https://jtslpg.co.uk/#business"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Anglesey"
+              }
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "LPG Regulator, Meter and Hose Work",
+              "provider": {
+                "@id": "https://jtslpg.co.uk/#business"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Anglesey"
+              }
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "New Caravan Connection and Commissioning",
+              "provider": {
+                "@id": "https://jtslpg.co.uk/#business"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Anglesey"
+              }
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Caravan and Holiday Park LPG Work",
+              "provider": {
+                "@id": "https://jtslpg.co.uk/#business"
+              },
+              "areaServed": [
+                {
+                  "@type": "AdministrativeArea",
+                  "name": "Anglesey"
+                },
+                {
+                  "@type": "AdministrativeArea",
+                  "name": "North Wales"
+                }
+              ]
+            }
           }
 
         ]
+      },
 
-      }
+      "sameAs": [
+        "https://maps.app.goo.gl/bEaAyxAanjpNgeDS9",
+        "https://www.facebook.com/profile.php?id=61577346257321",
+        "https://www.instagram.com/jts_lpg/"
+      ]
+    },
 
-    ]
 
-  }
+    {
+      "@type": "WebSite",
+      "@id": "https://jtslpg.co.uk/#website",
 
-  </script>
+      "url": "https://jtslpg.co.uk/",
+      "name": "JTS LPG Services",
+
+      "publisher": {
+        "@id": "https://jtslpg.co.uk/#business"
+      },
+
+      "inLanguage": "en-GB"
+    },
+
+
+    {
+      "@type": "ContactPage",
+      "@id": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html#webpage",
+
+      "url": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html",
+
+      "name": "Contact LPG Gas Engineer Anglesey | JTS LPG Services",
+
+      "description": "Contact JTS LPG Services for LPG gas work across Anglesey, including servicing, repairs, gas safety, boiler work and caravan connections.",
+
+      "isPartOf": {
+        "@id": "https://jtslpg.co.uk/#website"
+      },
+
+      "about": {
+        "@id": "https://jtslpg.co.uk/#business"
+      },
+
+      "breadcrumb": {
+        "@id": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html#breadcrumb"
+      },
+
+      "inLanguage": "en-GB"
+    },
+
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html#breadcrumb",
+
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jtslpg.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html"
+        }
+      ]
+    },
+
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html#faq",
+
+      "isPartOf": {
+        "@id": "https://jtslpg.co.uk/contact-lpg-engineer-anglesey.html#webpage"
+      },
+
+      "mainEntity": [
+
+        {
+          "@type": "Question",
+          "name": "My LPG boiler has stopped providing heating or hot water. Can you help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. JTS LPG carries out LPG boiler fault finding and repairs for problems including no heating, no hot water, ignition faults, flame-failure issues, gas-pressure problems and regulator or supply faults. Breakdown and fault-finding visits on Anglesey start from £85, including the call-out and up to the first hour on site."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "Can I book my gas safety check and boiler service together?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A Gas Safety Inspection and annual appliance service can be completed together for £130. This is often convenient where both the LPG installation and appliances require regular checks."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "Do you work on Morco, Ariston and Vaillant LPG appliances?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. JTS LPG Anglesey has hands-on experience working with commonly fitted LPG appliances including Morco, Ariston and Vaillant, as well as LPG water heaters, gas fires, cookers and boilers used in caravan and leisure settings."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "I have just had a static caravan sited. Can you connect and commission it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. JTS LPG Anglesey can connect the LPG supply, test the installation, commission the appliances and provide the required Gas Safety Certificate on satisfactory completion. Waste connections can also be included as part of a complete new caravan connection package."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "Can JTS look after several caravans or holiday homes on the same park?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. JTS LPG Anglesey works with individual owners as well as caravan parks and holiday parks requiring multiple gas safety inspections, annual servicing, repairs, regulator work and ongoing LPG maintenance."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "Which areas can you travel to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The main service area is Anglesey, including Holyhead, Valley, Trearddur Bay, Rhosneigr, Llangefni, Amlwch, Benllech, Menai Bridge, Beaumaris and surrounding communities. Selected work can also be arranged in Bangor and elsewhere in North Wales depending on the type and size of the job."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "What should I send if I am not sure what is wrong?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do not need to diagnose the problem yourself. Send a description of what is happening, your location and the type of property or caravan. If possible, include the appliance make and model and clear photos. For holiday parks, the site name and plot number are also useful."
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
+</script>
 
 </head>
 
@@ -421,14 +676,8 @@
 
     <h1>
       NEED LPG HELP?
-      <span>TELL JACK WHAT’S GOING ON.</span>
+      <span>GET IN TOUCH.</span>
     </h1>
-
-    <p class="contact-hero-lead">
-      From annual servicing and gas safety checks to breakdowns,
-      boiler replacements and caravan connections, send a few
-      details below and Jack will get back to you.
-    </p>
 
   </div>
 
@@ -455,23 +704,15 @@
 
 
           <span class="eyebrow">
-            Speak directly to Jack
+            Send an enquiry
           </span>
 
 
           <h2>
-            TELL JACK
+            HOW CAN
             <br>
-            WHAT YOU NEED.
+            WE HELP?
           </h2>
-
-
-          <p class="contact-enquiry-intro">
-            Whether you need an LPG gas safety inspection, annual
-            boiler service, breakdown repair, boiler replacement or
-            caravan connection, send over the details and Jack can
-            advise on the next step.
-          </p>
 
 
 
@@ -788,6 +1029,10 @@
                   New Caravan Connection
                 </option>
 
+<option value="Winterisation or Drain Down">
+  Winterisation / Drain Down
+</option>
+
                 <option value="Caravan or Holiday Park LPG Work">
                   Caravan / Holiday Park LPG Work
                 </option>
@@ -863,7 +1108,7 @@
             <div class="contact-field contact-field-full">
 
               <label for="contact-message">
-                Tell Jack about the job
+                Tell us about the job
               </label>
 
               <textarea
@@ -895,247 +1140,6 @@
 
 
         </form>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================================
-         WHAT TO SEND
-    ========================================================== -->
-
-    <section class="section contact-help-section">
-
-      <div class="container contact-help-layout">
-
-
-        <div class="contact-help-heading">
-
-          <h2>
-            WHAT TO INCLUDE
-            <br>
-            WITH YOUR ENQUIRY.
-          </h2>
-
-          <p>
-            Including a few details about the job can help Jack understand
-  what you need before getting back to you.
-          </p>
-
-        </div>
-
-
-
-        <div class="contact-help-list">
-
-
-          <div class="contact-help-item">
-
-            <span>
-              01
-            </span>
-
-            <div>
-
-              <strong>
-                Your location
-              </strong>
-
-              <p>
-                Send the town or postcode of the caravan,
-                holiday home, lodge or LPG property.
-              </p>
-
-            </div>
-
-          </div>
-
-
-
-          <div class="contact-help-item">
-
-            <span>
-              02
-            </span>
-
-            <div>
-
-              <strong>
-                Property type
-              </strong>
-
-              <p>
-  Let Jack know whether the job is for a static caravan,
-  lodge, holiday home, domestic LPG property or caravan park.
-</p>
-
-            </div>
-
-          </div>
-
-
-
-          <div class="contact-help-item">
-
-            <span>
-              03
-            </span>
-
-            <div>
-
-              <strong>
-                What work is required
-              </strong>
-
-              <p>
-                Gas safety, servicing, breakdown, repair,
-                replacement, installation or another LPG issue.
-              </p>
-
-            </div>
-
-          </div>
-
-
-
-          <div class="contact-help-item">
-
-            <span>
-              04
-            </span>
-
-            <div>
-
-              <strong>
-                Appliance details
-              </strong>
-
-              <p>
-                Include the make and model where known.
-                Photos can also be useful for quotations and repairs.
-              </p>
-
-            </div>
-
-          </div>
-
-
-
-          <div class="contact-help-item">
-
-            <span>
-              05
-            </span>
-
-            <div>
-
-              <strong>
-                Park and plot number
-              </strong>
-
-              <p>
-                If the job is on a caravan or holiday park,
-                include the site name and plot number if available.
-              </p>
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================================
-         COVERAGE
-    ========================================================== -->
-
-    <section class="section contact-coverage">
-
-      <div class="container contact-coverage-layout">
-
-
-        <div>
-
-          <span class="eyebrow">
-            Local LPG Coverage
-          </span>
-
-
-         <h2>
-  COVERING ALL
-  <br>
-  OF ANGLESEY.
-</h2>
-
-
-          <p>
-  JTS LPG Services is based on Anglesey and provides LPG
-  gas work across the island, with selected jobs also
-  available in Bangor and across wider North Wales depending
-  on the work required.
-</p>
-
-        </div>
-
-
-
-        <div class="contact-area-pills">
-
-          <a href="#enquire">
-            Holyhead
-          </a>
-
-          <a href="#enquire">
-            Valley
-          </a>
-
-          <a href="#enquire">
-            Trearddur Bay
-          </a>
-
-          <a href="#enquire">
-            Rhosneigr
-          </a>
-
-          <a href="#enquire">
-            Llangefni
-          </a>
-
-          <a href="#enquire">
-            Amlwch
-          </a>
-
-          <a href="#enquire">
-            Benllech
-          </a>
-
-          <a href="#enquire">
-            Menai Bridge
-          </a>
-
-          <a href="#enquire">
-            Beaumaris
-          </a>
-
-          <a href="#enquire">
-            Bangor
-          </a>
-
-          <a href="#enquire">
-            North Wales
-          </a>
-
-        </div>
 
 
       </div>
@@ -1197,7 +1201,7 @@
           </span>
 
           <span class="site-faq-question">
-  My LPG boiler has stopped providing heating or hot water. Can Jack help?
+  My LPG boiler has stopped providing heating or hot water. Can you help?
 </span>
 
           <span
@@ -1211,7 +1215,7 @@
         <div class="site-faq-answer">
 
           <p>
-            <strong>Yes.</strong> Jack carries out LPG boiler fault
+            <strong>Yes.</strong> JTS LPG carries out LPG boiler fault
             finding and repairs for problems including no heating,
             no hot water, ignition faults, flame-failure issues,
             gas-pressure problems and regulator or supply faults.
@@ -1296,7 +1300,7 @@
         <div class="site-faq-answer">
 
          <p>
-  <strong>Yes.</strong> Jack has hands-on experience working
+  <strong>Yes.</strong> JTS LPG Anglesey has hands-on experience working
   with commonly fitted LPG appliances, including Morco,
   Ariston and Vaillant, as well as LPG water heaters, gas
   fires, cookers and boilers used in caravan and leisure
@@ -1305,7 +1309,7 @@
 
           <p>
             If you know the make and model, include it with your
-            enquiry so Jack has more information before attending.
+            enquiry so we have more information before attending.
           </p>
 
         </div>
@@ -1339,7 +1343,7 @@
         <div class="site-faq-answer">
 
           <p>
-  <strong>Yes.</strong> JTS LPG Services can connect the LPG
+  <strong>Yes.</strong> JTS LPG Anglesey can connect the LPG
   supply, test the installation, commission the appliances
   and provide the required Gas Safety Certificate on
   satisfactory completion of the work.
@@ -1382,7 +1386,7 @@
         <div class="site-faq-answer">
 
           <p>
-            <strong>Yes.</strong> Jack works with individual owners
+            <strong>Yes.</strong> JTS LPG Anglesey works with individual owners
             as well as caravan parks and holiday parks requiring
             multiple gas safety inspections, annual servicing,
             repairs, regulator work and ongoing LPG maintenance.
@@ -1410,7 +1414,7 @@
           </span>
 
           <span class="site-faq-question">
-            Which areas can Jack travel to?
+            Which areas can you travel to?
           </span>
 
           <span
@@ -1537,7 +1541,7 @@
 
       <p class="footer-description">
   Gas Safe registered LPG specialist based on Anglesey, providing
-  gas safety, servicing, repairs, boiler replacements, caravan
+  gas safety, servicing, repairs, boiler replacements, winterisation, caravan
   connections and multi-unit LPG work for caravans, holiday homes,
   parks and LPG properties.
 </p>
@@ -1600,7 +1604,7 @@
         </a>
 
         <a href="contact-lpg-engineer-anglesey.html">
-          Contact Jack
+          Contact Us
         </a>
 
       </nav>
@@ -1628,29 +1632,37 @@
     Gas Safety + Annual Service Package
   </a>
 
-  <a href="lpg-services-anglesey.html#park-work">
+  <a href="lpg-services-anglesey.html">
     Caravan Park & Multi-Unit LPG
   </a>
 
-  <a href="lpg-services-anglesey.html#gas-safety">
+  <a href="lpg-services-anglesey.html">
     LPG Gas Safety Certificates
   </a>
 
-  <a href="lpg-services-anglesey.html#servicing">
+  <a href="lpg-services-anglesey.htm#servicing">
     LPG Boiler Servicing
   </a>
 
-  <a href="lpg-services-anglesey.html#repairs">
+  <a href="lpg-services-anglesey.html">
     LPG Boiler Repairs
   </a>
 
-  <a href="lpg-services-anglesey.html#replacement">
+  <a href="lpg-services-anglesey.html">
     LPG Boiler Replacement
   </a>
 
-  <a href="lpg-services-anglesey.html#connections">
+  <a href="lpg-services-anglesey.html">
     Caravan LPG Connections
   </a>
+
+    <a href="lpg-services-anglesey.html">
+      Winterisation & Drain Down
+    </a>
+
+    <a href="lpg-services-anglesey.html">
+      Caravan Park & Multi-Unit LPG
+    </a>
 
 </nav>
 
@@ -1721,7 +1733,7 @@
     <div class="footer-column footer-contact">
 
       <h3>
-        Contact Jack
+        Contact Us
       </h3>
 
 
@@ -1913,7 +1925,6 @@
   </div>
 
 </footer>
-
   <!-- ============================================================
        WHATSAPP FLOAT
   ============================================================= -->
